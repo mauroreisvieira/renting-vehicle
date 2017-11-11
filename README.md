@@ -8,8 +8,8 @@
 
 ### ⚗️ Technology used?
 
-- `Webpack` to run React and Typescript.
 - `Typescript` & `React`
+- `Webpack` to run React and Typescript.
 
 ### Clone the repo using Git
 
@@ -17,10 +17,6 @@
 git clone https://github.com/maurovieirareis/clipboard
 ```
 
-
 Alternatively you can [download](https://codeload.github.com/maurovieirareis/clipboard/zip/master) this repository.
 
-
 Created with ♥️ by [@mauroreisvieira](https://twitter.com/mauroreisvieira) in **Portugal**
-
-
