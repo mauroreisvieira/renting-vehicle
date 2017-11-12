@@ -80,6 +80,7 @@ var React = __webpack_require__(0);
 var ReactDOM = __webpack_require__(2);
 var Hello_1 = __webpack_require__(3);
 var Vehicle_1 = __webpack_require__(4);
+__webpack_require__(5);
 ReactDOM.render(React.createElement(Hello_1.Hello, { compiler: "TypeScript", framework: "React" }), document.getElementById("hello"));
 ReactDOM.render(React.createElement(Vehicle_1.Vehicle, { vehicleType: "Motorcycle", color: "Blue", numWheels: "2", age: "10" }), document.getElementById("car"));
 ReactDOM.render(React.createElement(Vehicle_1.Vehicle, { vehicleType: "Motorcycle", color: "Blue", numWheels: "2", age: "10" }), document.getElementById("motorcycle"));
@@ -169,6 +170,12 @@ var Vehicle = /** @class */ (function (_super) {
 }(React.Component));
 exports.Vehicle = Vehicle;
 
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
