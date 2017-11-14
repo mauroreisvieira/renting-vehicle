@@ -84,10 +84,9 @@ var VehicleComponent_1 = __webpack_require__(5);
 __webpack_require__(6);
 var Main = /** @class */ (function () {
     function Main() {
-        this.init();
         this.car = new Vehicle_1.default("red", 10, 5, "Car");
-        console.log(this.car);
         this.motorcycle = new Vehicle_1.default("blue", 2, 2, "Motorcycle");
+        this.init();
     }
     Main.prototype.init = function () {
         ReactDOM.render(React.createElement(HelloComponent_1.HelloComponent, { compiler: "TypeScript", framework: "React" }), document.getElementById("hello"));
@@ -181,14 +180,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
 var VehicleComponent = /** @class */ (function (_super) {
     __extends(VehicleComponent, _super);
-    function VehicleComponent(props) {
-        var _this = _super.call(this, props) || this;
-        console.log(_this.props);
-        return _this;
+    function VehicleComponent() {
+        return _super !== null && _super.apply(this, arguments) || this;
     }
     VehicleComponent.prototype.render = function () {
         return React.createElement("div", null,
-            React.createElement("div", null,
+            React.createElement("h4", null,
                 "VehicleType: ",
                 this.props.vehicleType),
             React.createElement("div", null,

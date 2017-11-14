@@ -9,13 +9,13 @@ import {VehicleComponent} from "./components/VehicleComponent";
 import '../scss/index.scss';
 
 export default class Main {
-    private car: Vehicle;
-    private motorcycle: Vehicle;
+    public car: Vehicle;
+    public motorcycle: Vehicle;
 
     constructor () {
-        this.init();
         this.car = new Vehicle("red", 10, 5, "Car");
         this.motorcycle = new Vehicle("blue", 2, 2, "Motorcycle");
+        this.init();
     }
 
     public init() : void {

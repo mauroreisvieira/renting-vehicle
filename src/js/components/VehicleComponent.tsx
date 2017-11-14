@@ -10,17 +10,12 @@ export interface VehicleProps {
 
 export class VehicleComponent extends React.Component<VehicleProps, {}> {
 
-  constructor (props: any) {
-    super(props);
-    console.log(this.props);
-  }
-
-  public render() {
+  render() {
     return <div>
-    <div>VehicleType: {this.props.vehicleType}</div>
-    <div>Color: {this.props.color}</div>
-    <div>Wheels: {this.props.numWheels}</div>
-    <div>Age: {this.props.age}</div>
+        <h4>VehicleType: {this.props.vehicleType}</h4>
+        <div>Color: {this.props.color}</div>
+        <div>Wheels: {this.props.numWheels}</div>
+        <div>Age: {this.props.age}</div>
     </div>;
   }
 }
