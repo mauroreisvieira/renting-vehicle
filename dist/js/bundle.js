@@ -78,12 +78,26 @@ module.exports = React;
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
 var ReactDOM = __webpack_require__(2);
-var Hello_1 = __webpack_require__(3);
-var Vehicle_1 = __webpack_require__(4);
-__webpack_require__(5);
-ReactDOM.render(React.createElement(Hello_1.Hello, { compiler: "TypeScript", framework: "React" }), document.getElementById("hello"));
-ReactDOM.render(React.createElement(Vehicle_1.Vehicle, { vehicleType: "Motorcycle", color: "Blue", numWheels: "2", age: "10" }), document.getElementById("car"));
-ReactDOM.render(React.createElement(Vehicle_1.Vehicle, { vehicleType: "Motorcycle", color: "Blue", numWheels: "2", age: "10" }), document.getElementById("motorcycle"));
+var Vehicle_1 = __webpack_require__(3);
+var HelloComponent_1 = __webpack_require__(4);
+var VehicleComponent_1 = __webpack_require__(5);
+__webpack_require__(6);
+var Main = /** @class */ (function () {
+    function Main() {
+        this.init();
+        this.car = new Vehicle_1.default("red", 10, 5, "Car");
+        console.log(this.car);
+        this.motorcycle = new Vehicle_1.default("blue", 2, 2, "Motorcycle");
+    }
+    Main.prototype.init = function () {
+        ReactDOM.render(React.createElement(HelloComponent_1.HelloComponent, { compiler: "TypeScript", framework: "React" }), document.getElementById("hello"));
+        ReactDOM.render(React.createElement(VehicleComponent_1.VehicleComponent, { vehicleType: this.car.vehicleType, color: this.car.color, numWheels: this.car.numWheels, age: this.car.age }), document.getElementById("car"));
+        ReactDOM.render(React.createElement(VehicleComponent_1.VehicleComponent, { vehicleType: this.motorcycle.vehicleType, color: this.motorcycle.color, numWheels: this.motorcycle.numWheels, age: this.motorcycle.age }), document.getElementById("motorcycle"));
+    };
+    return Main;
+}());
+exports.default = Main;
+new Main();
 
 
 /***/ }),
@@ -98,34 +112,17 @@ module.exports = ReactDOM;
 
 "use strict";
 
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
 Object.defineProperty(exports, "__esModule", { value: true });
-var React = __webpack_require__(0);
-var Hello = /** @class */ (function (_super) {
-    __extends(Hello, _super);
-    function Hello() {
-        return _super !== null && _super.apply(this, arguments) || this;
+var Vehicle = /** @class */ (function () {
+    function Vehicle(color, age, numWheels, vehicleType) {
+        this.color = color;
+        this.age = age;
+        this.numWheels = numWheels;
+        this.vehicleType = vehicleType;
     }
-    Hello.prototype.render = function () {
-        return React.createElement("h1", null,
-            "Hello from ",
-            this.props.compiler,
-            " and ",
-            this.props.framework,
-            "!");
-    };
-    return Hello;
-}(React.Component));
-exports.Hello = Hello;
+    return Vehicle;
+}());
+exports.default = Vehicle;
 
 
 /***/ }),
@@ -146,12 +143,50 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
-var Vehicle = /** @class */ (function (_super) {
-    __extends(Vehicle, _super);
-    function Vehicle() {
+var HelloComponent = /** @class */ (function (_super) {
+    __extends(HelloComponent, _super);
+    function HelloComponent() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    Vehicle.prototype.render = function () {
+    HelloComponent.prototype.render = function () {
+        return React.createElement("h1", null,
+            "Hello from ",
+            this.props.compiler,
+            " and ",
+            this.props.framework,
+            "!");
+    };
+    return HelloComponent;
+}(React.Component));
+exports.HelloComponent = HelloComponent;
+
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = __webpack_require__(0);
+var VehicleComponent = /** @class */ (function (_super) {
+    __extends(VehicleComponent, _super);
+    function VehicleComponent(props) {
+        var _this = _super.call(this, props) || this;
+        console.log(_this.props);
+        return _this;
+    }
+    VehicleComponent.prototype.render = function () {
         return React.createElement("div", null,
             React.createElement("div", null,
                 "VehicleType: ",
@@ -166,17 +201,17 @@ var Vehicle = /** @class */ (function (_super) {
                 "Age: ",
                 this.props.age));
     };
-    return Vehicle;
+    return VehicleComponent;
 }(React.Component));
-exports.Vehicle = Vehicle;
+exports.VehicleComponent = VehicleComponent;
 
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=bundle.js.map
