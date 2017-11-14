@@ -1,5 +1,5 @@
 {
-  "name": "clipboard",
+  "name": "renting-vehicle",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maurovieirareis/clipboard.git"
+    "url": "git+https://github.com/maurovieirareis/renting-vehicle.git"
   },
   "author": "Mauro Reis Vieira <mauroreisvieira@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/maurovieirareis/clipboard/issues"
+    "url": "https://github.com/maurovieirareis/renting-vehicle/issues"
   },
-  "homepage": "https://github.com/maurovieirareis/clipboard#readme",
+  "homepage": "https://github.com/maurovieirareis/renting-vehicle#readme",
   "dependencies": {
     "@types/react": "^16.0.22",
     "@types/react-dom": "^16.0.3",
