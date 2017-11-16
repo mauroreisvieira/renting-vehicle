@@ -79,9 +79,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
 var ReactDOM = __webpack_require__(2);
 var Vehicle_1 = __webpack_require__(3);
-var HelloComponent_1 = __webpack_require__(4);
-var VehicleComponent_1 = __webpack_require__(5);
-__webpack_require__(6);
+var FooterComponent_1 = __webpack_require__(4);
+var HeaderComponent_1 = __webpack_require__(5);
+var HelloComponent_1 = __webpack_require__(6);
+var VehicleComponent_1 = __webpack_require__(7);
+__webpack_require__(8);
 var Main = /** @class */ (function () {
     function Main() {
         this.car = new Vehicle_1.default('red', 10, 5, 'Car');
@@ -89,9 +91,11 @@ var Main = /** @class */ (function () {
         this.init();
     }
     Main.prototype.init = function () {
+        ReactDOM.render(React.createElement(HeaderComponent_1.HeaderComponent, null), document.getElementById('header'));
         ReactDOM.render(React.createElement(HelloComponent_1.HelloComponent, { compiler: 'TypeScript', framework: 'React' }), document.getElementById('hello'));
         ReactDOM.render(React.createElement(VehicleComponent_1.VehicleComponent, { vehicleType: this.car.vehicleType, color: this.car.color, numWheels: this.car.numWheels, age: this.car.age }), document.getElementById('car'));
         ReactDOM.render(React.createElement(VehicleComponent_1.VehicleComponent, { vehicleType: this.motorcycle.vehicleType, color: this.motorcycle.color, numWheels: this.motorcycle.numWheels, age: this.motorcycle.age }), document.getElementById('motorcycle'));
+        ReactDOM.render(React.createElement(FooterComponent_1.FooterComponent, null), document.getElementById('footer'));
     };
     return Main;
 }());
@@ -142,6 +146,81 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
+var FooterComponent = /** @class */ (function (_super) {
+    __extends(FooterComponent, _super);
+    function FooterComponent() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    FooterComponent.prototype.render = function () {
+        return React.createElement("footer", null, "Footer");
+    };
+    return FooterComponent;
+}(React.Component));
+exports.FooterComponent = FooterComponent;
+
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = __webpack_require__(0);
+var HeaderComponent = /** @class */ (function (_super) {
+    __extends(HeaderComponent, _super);
+    function HeaderComponent() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    HeaderComponent.prototype.render = function () {
+        return React.createElement("header", { className: 'header' },
+            React.createElement("div", { className: 'content' },
+                React.createElement("nav", { className: 'header__nav' },
+                    React.createElement("ul", { className: 'nav nav--right' },
+                        React.createElement("li", { className: 'nav__item ' },
+                            React.createElement("a", { href: './game.html', className: 'nav__item-link' }, "Game")),
+                        React.createElement("li", { className: 'nav__item nav__item--active' },
+                            React.createElement("a", { href: './rating.html', className: 'nav__item-link' }, "Rating")),
+                        React.createElement("li", { className: 'nav__item' },
+                            React.createElement("a", { href: './friends.html', className: 'nav__item-link' }, "Friends")),
+                        React.createElement("li", { className: 'nav__item' },
+                            React.createElement("a", { href: './settings.html', className: 'nav__item-link' }, "Settings")),
+                        React.createElement("li", { className: 'nav__item' },
+                            React.createElement("a", { href: './index.html', id: 'logout', className: 'nav__item-link' }, "Logout"))))));
+    };
+    return HeaderComponent;
+}(React.Component));
+exports.HeaderComponent = HeaderComponent;
+
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = __webpack_require__(0);
 var HelloComponent = /** @class */ (function (_super) {
     __extends(HelloComponent, _super);
     function HelloComponent() {
@@ -161,7 +240,7 @@ exports.HelloComponent = HelloComponent;
 
 
 /***/ }),
-/* 5 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -204,7 +283,7 @@ exports.VehicleComponent = VehicleComponent;
 
 
 /***/ }),
-/* 6 */
+/* 8 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
