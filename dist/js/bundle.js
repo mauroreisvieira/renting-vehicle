@@ -84,14 +84,14 @@ var VehicleComponent_1 = __webpack_require__(5);
 __webpack_require__(6);
 var Main = /** @class */ (function () {
     function Main() {
-        this.car = new Vehicle_1.default("red", 10, 5, "Car");
-        this.motorcycle = new Vehicle_1.default("blue", 2, 2, "Motorcycle");
+        this.car = new Vehicle_1.default('red', 10, 5, 'Car');
+        this.motorcycle = new Vehicle_1.default('blue', 2, 2, 'Motorcycle');
         this.init();
     }
     Main.prototype.init = function () {
-        ReactDOM.render(React.createElement(HelloComponent_1.HelloComponent, { compiler: "TypeScript", framework: "React" }), document.getElementById("hello"));
-        ReactDOM.render(React.createElement(VehicleComponent_1.VehicleComponent, { vehicleType: this.car.vehicleType, color: this.car.color, numWheels: this.car.numWheels, age: this.car.age }), document.getElementById("car"));
-        ReactDOM.render(React.createElement(VehicleComponent_1.VehicleComponent, { vehicleType: this.motorcycle.vehicleType, color: this.motorcycle.color, numWheels: this.motorcycle.numWheels, age: this.motorcycle.age }), document.getElementById("motorcycle"));
+        ReactDOM.render(React.createElement(HelloComponent_1.HelloComponent, { compiler: 'TypeScript', framework: 'React' }), document.getElementById('hello'));
+        ReactDOM.render(React.createElement(VehicleComponent_1.VehicleComponent, { vehicleType: this.car.vehicleType, color: this.car.color, numWheels: this.car.numWheels, age: this.car.age }), document.getElementById('car'));
+        ReactDOM.render(React.createElement(VehicleComponent_1.VehicleComponent, { vehicleType: this.motorcycle.vehicleType, color: this.motorcycle.color, numWheels: this.motorcycle.numWheels, age: this.motorcycle.age }), document.getElementById('motorcycle'));
     };
     return Main;
 }());

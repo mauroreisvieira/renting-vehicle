@@ -1,7 +1,7 @@
 .button {
   background: none;
-  border-radius: $border-radius-buttons;
   border: 0;
+  border-radius: $border-radius-buttons;
   color: inherit;
   cursor: pointer;
   display: block;
@@ -74,7 +74,7 @@
       background-color: nth($values, 1);
       color: nth($values, 2);
       overflow: hidden;
-      transition: border-color 0.3s, color 0.3s;
+      transition: border-color .3s, color .3s;
 
       &:before {
         background-color: nth($values, 3);
@@ -83,8 +83,8 @@
         left: 0;
         position: absolute;
         top: 0;
-        transform-origin: left bottom;
         transform: rotate3d(0, 0, 1, -90deg);
+        transform-origin: left bottom;
         transition: transform .3s, background-color .3s;
         width: 150%;
         will-change: transform;
