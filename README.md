@@ -9,7 +9,8 @@
 ### ⚗️ Technology used?
 
 - `Typescript` & `React`
-- `Webpack` to run React and Typescript.
+- `_BEM` & `SMACSS`
+- `Webpack`
 
 ### Clone the repo using Git
 
