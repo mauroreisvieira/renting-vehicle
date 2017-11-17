@@ -1,9 +1,8 @@
 import * as React from 'react';
 
-export class HeaderComponent extends React.Component  {
+export class SideNavComponent extends React.Component {
     public render(): any {
-        return (
-            <div className='content'>
+        return (<div className='content'>
                 <nav className='header__nav'>
                     <ul className='nav nav--right'>
                         <li className='nav__item '><a href='./index.html' className='nav__item-link'>Home</a></li>

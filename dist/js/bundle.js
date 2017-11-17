@@ -183,20 +183,13 @@ var HeaderComponent = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     HeaderComponent.prototype.render = function () {
-        return React.createElement("header", { className: 'header' },
-            React.createElement("div", { className: 'content' },
-                React.createElement("nav", { className: 'header__nav' },
-                    React.createElement("ul", { className: 'nav nav--right' },
-                        React.createElement("li", { className: 'nav__item ' },
-                            React.createElement("a", { href: './game.html', className: 'nav__item-link' }, "Game")),
-                        React.createElement("li", { className: 'nav__item nav__item--active' },
-                            React.createElement("a", { href: './rating.html', className: 'nav__item-link' }, "Rating")),
-                        React.createElement("li", { className: 'nav__item' },
-                            React.createElement("a", { href: './friends.html', className: 'nav__item-link' }, "Friends")),
-                        React.createElement("li", { className: 'nav__item' },
-                            React.createElement("a", { href: './settings.html', className: 'nav__item-link' }, "Settings")),
-                        React.createElement("li", { className: 'nav__item' },
-                            React.createElement("a", { href: './index.html', id: 'logout', className: 'nav__item-link' }, "Logout"))))));
+        return (React.createElement("div", { className: 'content' },
+            React.createElement("nav", { className: 'header__nav' },
+                React.createElement("ul", { className: 'nav nav--right' },
+                    React.createElement("li", { className: 'nav__item ' },
+                        React.createElement("a", { href: './index.html', className: 'nav__item-link' }, "Home")),
+                    React.createElement("li", { className: 'nav__item nav__item--active' },
+                        React.createElement("a", { href: './test.html', className: 'nav__item-link' }, "Test"))))));
     };
     return HeaderComponent;
 }(React.Component));

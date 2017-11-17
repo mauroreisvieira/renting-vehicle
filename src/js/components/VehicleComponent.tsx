@@ -9,8 +9,7 @@ export interface VehicleProps {
 }
 
 export class VehicleComponent extends React.Component<VehicleProps, {}> {
-
-  render() {
+  public render(): any {
     return <div>
         <h4>VehicleType: {this.props.vehicleType}</h4>
         <div>Color: {this.props.color}</div>
