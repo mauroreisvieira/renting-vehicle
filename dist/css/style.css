@@ -757,7 +757,6 @@ svg {
 .footer {
   align-items: center;
   display: flex;
-  height: 100px;
   justify-content: center;
   text-align: center; }
   .footer p {
@@ -840,5 +839,30 @@ svg {
     margin: auto;
     position: relative;
     z-index: 3; }
+
+body {
+  background-color: #fff;
+  display: grid;
+  grid-auto-columns: auto;
+  grid-gap: 100px;
+  grid-template-areas: 'header header' 'sidenav main' 'footer footer';
+  height: 100vh;
+  margin: 0 auto; }
+
+.header {
+  background-color: #ff4d63;
+  grid-area: header; }
+
+.sidenav {
+  background-color: #10A9E7;
+  grid-area: sidenav; }
+
+.main {
+  background-color: #01D097;
+  grid-area: main; }
+
+.footer {
+  background-color: #DF1070;
+  grid-area: footer; }
 
 /*# sourceMappingURL=style.css.map*/

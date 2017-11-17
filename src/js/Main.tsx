@@ -5,6 +5,7 @@ import Vehicle from './model/Vehicle';
 
 import { FooterComponent } from './components/layout/FooterComponent';
 import { HeaderComponent } from './components/layout/HeaderComponent';
+import { SideNavComponent } from './components/layout/SideNavComponent';
 import { HelloComponent } from './components/HelloComponent';
 import {VehicleComponent} from './components/VehicleComponent';
 
@@ -25,6 +26,11 @@ export default class Main {
         ReactDOM.render(
             <HeaderComponent />,
             document.getElementById('header')
+        );
+
+        ReactDOM.render(
+            <SideNavComponent />,
+            document.getElementById('sidenav')
         );
 
         ReactDOM.render(

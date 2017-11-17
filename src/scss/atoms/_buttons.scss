@@ -22,10 +22,6 @@
     pointer-events: none;
   }
 
-  &--fullwidth {
-    width: 100%;
-  }
-
   &--large {
     font-size: $font-medium;
     font-weight: $font-bold;
@@ -76,7 +72,7 @@
       overflow: hidden;
       transition: border-color .3s, color .3s;
 
-      &:before {
+      &::before {
         background-color: nth($values, 3);
         content: '';
         height: 100%;
@@ -98,7 +94,7 @@
       &:hover {
         color: nth($values, 4);
 
-        &:before {
+        &::before {
           background-color: nth($values, 3);
           opacity: 1;
           transform: rotate3d(0, 0, 1, 0deg);

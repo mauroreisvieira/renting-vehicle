@@ -1,19 +1,15 @@
 .nav {
+  align-items: center;
   display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
   list-style: none;
   padding: 0;
 
-  &--right {
-    justify-content: flex-end;
-
-    @include tablet() {
-      justify-content: center;
-    }
-  }
-
   &__item {
 
-    &-link {
+    &__link {
       color: $color-darkblue;
       display: block;
       font-size: $font-small;
@@ -22,13 +18,6 @@
       position: relative;
       text-decoration: none;
       transition: color .2s linear;
-    }
-
-    &--active {
-
-      .nav__item-link {
-        color: $color-salmon;
-      }
     }
   }
 }

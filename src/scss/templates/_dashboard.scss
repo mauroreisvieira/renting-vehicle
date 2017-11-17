@@ -1,0 +1,32 @@
+body {
+  background-color: $color-white;
+  display: grid;
+  grid-auto-columns: auto;
+  grid-gap: 100px;
+  grid-template-areas:
+  'header header'
+  'sidenav main'
+  'footer footer';
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: $color-red;
+  grid-area: header;
+}
+
+.sidenav {
+  background-color: $color-blue;
+  grid-area: sidenav;
+}
+
+.main {
+  background-color: $color-green;
+  grid-area: main;
+}
+
+.footer {
+  background-color: $color-pink;
+  grid-area: footer;
+}
