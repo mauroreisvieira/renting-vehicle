@@ -2,7 +2,7 @@ body {
   background-color: $color-white;
   display: grid;
   grid-auto-columns: auto;
-  grid-gap: 100px;
+  grid-gap: 20px;
   grid-template-areas:
   'header header'
   'sidenav main'

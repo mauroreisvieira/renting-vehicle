@@ -302,8 +302,8 @@ h1 {
   font-weight: 400;
   line-height: 1.4;
   color: #000;
-  text-transform: uppercase;
-  margin: 22px 0; }
+  margin: 22px 0;
+  text-transform: uppercase; }
 
 h2 {
   font-family: "Raleway", sans-serif;
@@ -311,8 +311,8 @@ h2 {
   font-weight: 900;
   line-height: 1.4;
   color: #000;
-  text-transform: uppercase;
-  margin: 22px 0; }
+  margin: 22px 0;
+  text-transform: uppercase; }
 
 h3 {
   font-family: "Raleway", sans-serif;
@@ -320,8 +320,8 @@ h3 {
   font-weight: 600;
   line-height: 1.4;
   color: #000;
-  text-transform: uppercase;
-  margin: 22px 0; }
+  margin: 22px 0;
+  text-transform: uppercase; }
 
 h4 {
   font-family: "Raleway", sans-serif;
@@ -329,8 +329,8 @@ h4 {
   font-weight: 600;
   line-height: 1.4;
   color: #000;
-  text-transform: uppercase;
-  margin: 22px 0; }
+  margin: 22px 0;
+  text-transform: uppercase; }
 
 h5 {
   font-family: "Raleway", sans-serif;
@@ -338,8 +338,8 @@ h5 {
   font-weight: 600;
   line-height: 1.4;
   color: #02202C;
-  text-transform: uppercase;
-  margin: 22px 0; }
+  margin: 22px 0;
+  text-transform: uppercase; }
 
 h6 {
   font-family: "Raleway", sans-serif;
@@ -347,8 +347,8 @@ h6 {
   font-weight: 600;
   line-height: 1.4;
   color: #D1DDED;
-  text-transform: uppercase;
-  margin: 22px 0; }
+  margin: 22px 0;
+  text-transform: uppercase; }
 
 p {
   font-family: "Raleway", sans-serif;
@@ -364,8 +364,8 @@ a {
   line-height: 1.4;
   color: #f86755; }
   a:hover {
-    text-decoration: none;
-    color: #072c61; }
+    color: #072c61;
+    text-decoration: none; }
 
 input {
   border: 1px solid #D1DDED;
@@ -449,8 +449,6 @@ svg {
   .button[disabled] {
     opacity: .7;
     pointer-events: none; }
-  .button--fullwidth {
-    width: 100%; }
   .button--large {
     font-size: 16px;
     font-weight: 600;
@@ -486,7 +484,7 @@ svg {
     color: #fff;
     overflow: hidden;
     transition: border-color .3s, color .3s; }
-    .button--aqua:before {
+    .button--aqua::before {
       background-color: #f86755;
       content: '';
       height: 100%;
@@ -503,7 +501,7 @@ svg {
       outline: none; }
     .button--aqua:hover {
       color: #fff; }
-      .button--aqua:hover:before {
+      .button--aqua:hover::before {
         background-color: #f86755;
         opacity: 1;
         transform: rotate3d(0, 0, 1, 0deg);
@@ -513,7 +511,7 @@ svg {
     color: #fff;
     overflow: hidden;
     transition: border-color .3s, color .3s; }
-    .button--yellow:before {
+    .button--yellow::before {
       background-color: #f86755;
       content: '';
       height: 100%;
@@ -530,7 +528,7 @@ svg {
       outline: none; }
     .button--yellow:hover {
       color: #fff; }
-      .button--yellow:hover:before {
+      .button--yellow:hover::before {
         background-color: #f86755;
         opacity: 1;
         transform: rotate3d(0, 0, 1, 0deg);
@@ -540,7 +538,7 @@ svg {
     color: #fff;
     overflow: hidden;
     transition: border-color .3s, color .3s; }
-    .button--darkblue:before {
+    .button--darkblue::before {
       background-color: #FDBC59;
       content: '';
       height: 100%;
@@ -557,7 +555,7 @@ svg {
       outline: none; }
     .button--darkblue:hover {
       color: #fff; }
-      .button--darkblue:hover:before {
+      .button--darkblue:hover::before {
         background-color: #FDBC59;
         opacity: 1;
         transform: rotate3d(0, 0, 1, 0deg);
@@ -567,7 +565,7 @@ svg {
     color: #fff;
     overflow: hidden;
     transition: border-color .3s, color .3s; }
-    .button--green:before {
+    .button--green::before {
       background-color: #0193a3;
       content: '';
       height: 100%;
@@ -584,7 +582,7 @@ svg {
       outline: none; }
     .button--green:hover {
       color: #fff; }
-      .button--green:hover:before {
+      .button--green:hover::before {
         background-color: #0193a3;
         opacity: 1;
         transform: rotate3d(0, 0, 1, 0deg);
@@ -594,7 +592,7 @@ svg {
     color: #fff;
     overflow: hidden;
     transition: border-color .3s, color .3s; }
-    .button--salmon:before {
+    .button--salmon::before {
       background-color: #36f7ce;
       content: '';
       height: 100%;
@@ -611,7 +609,7 @@ svg {
       outline: none; }
     .button--salmon:hover {
       color: #000; }
-      .button--salmon:hover:before {
+      .button--salmon:hover::before {
         background-color: #36f7ce;
         opacity: 1;
         transform: rotate3d(0, 0, 1, 0deg);
@@ -621,7 +619,7 @@ svg {
     color: #000;
     overflow: hidden;
     transition: border-color .3s, color .3s; }
-    .button--white:before {
+    .button--white::before {
       background-color: #f86755;
       content: '';
       height: 100%;
@@ -638,7 +636,7 @@ svg {
       outline: none; }
     .button--white:hover {
       color: #fff; }
-      .button--white:hover:before {
+      .button--white:hover::before {
         background-color: #f86755;
         opacity: 1;
         transform: rotate3d(0, 0, 1, 0deg);
@@ -648,7 +646,7 @@ svg {
     color: #fff;
     overflow: hidden;
     transition: border-color .3s, color .3s; }
-    .button--black:before {
+    .button--black::before {
       background-color: #f86755;
       content: '';
       height: 100%;
@@ -665,7 +663,7 @@ svg {
       outline: none; }
     .button--black:hover {
       color: #000; }
-      .button--black:hover:before {
+      .button--black:hover::before {
         background-color: #f86755;
         opacity: 1;
         transform: rotate3d(0, 0, 1, 0deg);
@@ -712,42 +710,41 @@ svg {
       display: flex;
       flex-direction: column; }
 
-.form .form__fieldset {
+.form__fieldset {
+  align-items: left;
   border: 0;
   display: flex;
-  align-items: left;
   margin-bottom: 20px;
   position: relative; }
-  .form .form__fieldset svg {
+  .form__fieldset svg {
     height: 44px;
     position: absolute; }
-  .form .form__fieldset:last-child {
+  .form__fieldset:last-child {
     margin-bottom: 0; }
-  .form .form__fieldset--column {
+  .form__fieldset--column {
     flex-direction: column; }
-  .form .form__fieldset--hidde {
+  .form__fieldset--hidde {
     display: none; }
 
 .nav {
+  align-items: center;
   display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
   list-style: none;
   padding: 0; }
-  .nav--right {
-    justify-content: flex-end; }
-    @media (max-width: 992px) {
-      .nav--right {
-        justify-content: center; } }
-  .nav__item-link {
-    color: #072c61;
-    display: block;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 4px 14px;
-    position: relative;
-    text-decoration: none;
-    transition: color .2s linear; }
-  .nav__item--active .nav__item-link {
-    color: #f86755; }
+  .nav__item {
+    padding: 20px 0; }
+    .nav__item__link {
+      color: #072c61;
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 4px 14px;
+      position: relative;
+      text-decoration: none;
+      transition: color .2s linear; }
 
 /**
  * Organisms
@@ -759,48 +756,25 @@ svg {
   display: flex;
   justify-content: center;
   text-align: center; }
-  .footer p {
-    color: #fff;
-    font-size: 12px; }
-  .footer span {
-    color: #ff4d63;
-    font-size: 12px; }
-  .footer a {
-    color: #36f7ce;
-    text-decoration: none;
-    font-size: 12px; }
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center; }
 
 .main {
   align-items: center;
   display: flex;
   justify-content: center;
-  min-height: 60vh;
   text-align: center; }
 
-.header {
-  background-color: #fff; }
-  .header .content {
-    align-items: center;
-    display: flex;
-    margin: auto;
-    width: 1024px; }
-    @media (max-width: 992px) {
-      .header .content {
-        flex-direction: column;
-        padding: 20px 0;
-        width: 100%; } }
-    .header .content .header__logo {
-      align-items: center;
-      display: flex;
-      flex-basis: 20%;
-      justify-content: center;
-      min-width: 180px;
-      width: 20%; }
-      .header .content .header__logo-image {
-        width: 100%; }
-    .header .content .header__nav {
-      flex-basis: 80%;
-      width: 80%; }
+.sidenav {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  text-align: center; }
 
 /**
  * Templates
@@ -844,7 +818,7 @@ body {
   background-color: #fff;
   display: grid;
   grid-auto-columns: auto;
-  grid-gap: 100px;
+  grid-gap: 20px;
   grid-template-areas: 'header header' 'sidenav main' 'footer footer';
   height: 100vh;
   margin: 0 auto; }

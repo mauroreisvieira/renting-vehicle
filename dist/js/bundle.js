@@ -186,7 +186,8 @@ var HeaderComponent = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     HeaderComponent.prototype.render = function () {
-        return (React.createElement("div", { className: 'content' }, "Header"));
+        return (React.createElement("div", { className: 'content' },
+            React.createElement("p", null, "Header")));
     };
     return HeaderComponent;
 }(React.Component));
@@ -219,9 +220,9 @@ var SideNavComponent = /** @class */ (function (_super) {
     SideNavComponent.prototype.render = function () {
         return (React.createElement("ul", { className: 'nav' },
             React.createElement("li", { className: 'nav__item' },
-                React.createElement("a", { href: './index.html', className: 'nav__item-link' }, "Home")),
+                React.createElement("a", { href: './index.html', className: 'nav__item__link' }, "Home")),
             React.createElement("li", { className: 'nav__item nav__item--active' },
-                React.createElement("a", { href: './test.html', className: 'nav__item-link' }, "Test"))));
+                React.createElement("a", { href: './test.html', className: 'nav__item__link' }, "Test"))));
     };
     return SideNavComponent;
 }(React.Component));

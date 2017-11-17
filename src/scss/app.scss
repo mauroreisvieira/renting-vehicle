@@ -39,8 +39,9 @@
  * distinct section of an interface, such as a header or a footer.
  */
 @import 'organisms/footer';
-@import 'organisms/main';
 @import 'organisms/header';
+@import 'organisms/main';
+@import 'organisms/sidenav';
 
 /**
  * Templates
