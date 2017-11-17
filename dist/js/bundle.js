@@ -253,7 +253,7 @@ var HelloComponent = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     HelloComponent.prototype.render = function () {
-        return React.createElement("h1", null,
+        return React.createElement("h3", null,
             "Hello from ",
             this.props.compiler,
             " and ",

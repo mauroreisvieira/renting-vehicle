@@ -1,6 +1,9 @@
 .header {
   align-items: center;
+  background-color: $color-red;
   display: flex;
+  grid-area: header;
+  height: $theme-header-height;
   justify-content: center;
   text-align: center;
 }

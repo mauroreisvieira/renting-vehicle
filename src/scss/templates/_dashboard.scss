@@ -2,31 +2,12 @@ body {
   background-color: $color-white;
   display: grid;
   grid-auto-columns: auto;
-  grid-gap: 20px;
+  grid-gap: $theme-gutter;
   grid-template-areas:
-  'header header'
-  'sidenav main'
-  'footer footer';
-  height: 100vh;
+  'sidenav header header'
+  'sidenav main main'
+  'sidenav footer footer';
   margin: 0 auto;
+  width: 100%;
 }
 
-.header {
-  background-color: $color-red;
-  grid-area: header;
-}
-
-.sidenav {
-  background-color: $color-blue;
-  grid-area: sidenav;
-}
-
-.main {
-  background-color: $color-green;
-  grid-area: main;
-}
-
-.footer {
-  background-color: $color-pink;
-  grid-area: footer;
-}

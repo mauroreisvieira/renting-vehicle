@@ -1,6 +1,9 @@
 .footer {
   align-items: center;
+  background-color: $color-green;
   display: flex;
+  grid-area: footer;
+  height: $theme-footer-height;
   justify-content: center;
   text-align: center;
 }

@@ -17,7 +17,6 @@ $color-green     : #01D097;
 $color-darkgreen : #02202C;
 $color-greylight : #D1DDED; // New
 
-
 // Default Colors
 $color-text-default   : $color-black ;
 $color-title-default  : $color-salmon;
@@ -71,7 +70,6 @@ $class-row: 'row';
 $class-cell: 'cell';
 $class-off: 'off';
 
-
 // Breakpoints
 $min-device : 280px;
 $mobile : 767px;
@@ -94,3 +92,13 @@ $buttons: (
   'white'    : ($color-white, $color-black, $color-salmon, $color-white),
   'black'    : ($color-black, $color-white, $color-salmon, $color-black)
 );
+
+
+$theme-gutter: 20px;
+$theme-padding: 20px;
+
+$theme-header-height: 100px;
+$theme-footer-height: 100px;
+
+$theme-main-width: 1024px;
+$theme-sidenav-width: 100px;

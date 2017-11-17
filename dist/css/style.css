@@ -4,20 +4,6 @@
  * This folder will need to define the foundation, i.e., a set of global classes, mixins, variables and styles
  * that can be used anywhere and anytime.
  */
-html {
-  -ms-touch-action: manipulation;
-  touch-action: manipulation; }
-
-body {
-  background-color: #fff;
-  letter-spacing: 1px; }
-
-::-moz-selection {
-  color: #000; }
-
-::selection {
-  color: #000; }
-
 /**
  * Calculate column size percentage
  */
@@ -278,15 +264,6 @@ body {
 
 .color-white {
   color: #fff; }
-
-html {
-  overflow-x: hidden; }
-
-body {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  overflow-x: hidden; }
 
 /**
  * Atoms
@@ -753,28 +730,39 @@ svg {
  */
 .footer {
   align-items: center;
+  background-color: #01D097;
   display: flex;
+  grid-area: footer;
+  height: 100px;
   justify-content: center;
   text-align: center; }
 
 .header {
   align-items: center;
+  background-color: #ff4d63;
   display: flex;
+  grid-area: header;
+  height: 100px;
   justify-content: center;
   text-align: center; }
 
 .main {
   align-items: center;
-  display: flex;
-  justify-content: center;
-  text-align: center; }
+  background: #10A9E7;
+  display: block;
+  grid-area: main;
+  height: calc(100vh - ((100px + 100px) + (20px * 2) ));
+  padding: 20px; }
 
 .sidenav {
   align-items: center;
+  background-color: #ff4d63;
   display: flex;
+  grid-area: sidenav;
   height: 100%;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  width: 100px; }
 
 /**
  * Templates
@@ -819,24 +807,8 @@ body {
   display: grid;
   grid-auto-columns: auto;
   grid-gap: 20px;
-  grid-template-areas: 'header header' 'sidenav main' 'footer footer';
-  height: 100vh;
-  margin: 0 auto; }
-
-.header {
-  background-color: #ff4d63;
-  grid-area: header; }
-
-.sidenav {
-  background-color: #10A9E7;
-  grid-area: sidenav; }
-
-.main {
-  background-color: #01D097;
-  grid-area: main; }
-
-.footer {
-  background-color: #DF1070;
-  grid-area: footer; }
+  grid-template-areas: 'sidenav header header' 'sidenav main main' 'sidenav footer footer';
+  margin: 0 auto;
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map*/
