@@ -1,16 +1,25 @@
 @import '../../utilities/variables';
 @import '../../utilities/mixins';
 
-$c-button-border-radius-buttons: 10px;
+$c-button-border-radius: 2px;
+
+$c-button-font-size-small: $u-font-size - 4; // 16px
+$c-button-font-size-medium: $u-font-size; // 16px
+$c-button-font-weight-normal: $u-font-weight; // 400
+
+$c-button-color-danger: map-get($u-color-red, 'base');
+$c-button-color-danger-hover: map-get($u-color-pink, 'base');
+
+$c-button-color-success: map-get($u-color-green, 'base');
+$c-button-color-success-hover: map-get($u-color-blue, 'base');
+
+$c-button-color-info: map-get($u-color-blue, 'base');
+$c-button-color-info-hover: map-get($u-color-red, 'base');
 
 $buttons: (
-  'aqua': (map-get($u-color-red, 'base'), map-get($u-color-red, 'base'), map-get($u-color-red, 'base'), map-get($u-color-red, 'base')),
-  'yellow': (map-get($u-color-red, 'base'), map-get($u-color-red, 'base'), map-get($u-color-red, 'base'), map-get($u-color-red, 'base')),
-  'darkblue': (map-get($u-color-red, 'base'), map-get($u-color-red, 'base'), map-get($u-color-red, 'base'), map-get($u-color-red, 'base')),
-  'green': (map-get($u-color-red, 'base'), map-get($u-color-red, 'base'), map-get($u-color-red, 'base'), map-get($u-color-red, 'base')),
-  'salmon': (map-get($u-color-red, 'base'), map-get($u-color-red, 'base'), map-get($u-color-red, 'base'), map-get($u-color-red, 'base')),
-  'white': (map-get($u-color-red, 'base'), map-get($u-color-red, 'base'), map-get($u-color-red, 'base'), map-get($u-color-red, 'base')),
-  'black': (map-get($u-color-red, 'base'), map-get($u-color-red, 'base'), map-get($u-color-red, 'base'), map-get($u-color-red, 'base'))
+  'danger': ($c-button-color-danger, $u-color-white, $c-button-color-danger-hover, $u-color-white),
+  'success': ($c-button-color-success, $u-color-white, $c-button-color-success-hover, $u-color-white),
+  'info': ($c-button-color-info, $u-color-white, $c-button-color-info-hover, $u-color-white)
 );
 
 @import 'button';

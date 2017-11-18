@@ -82,9 +82,10 @@ var Vehicle_1 = __webpack_require__(3);
 var FooterComponent_1 = __webpack_require__(4);
 var HeaderComponent_1 = __webpack_require__(5);
 var SideNavComponent_1 = __webpack_require__(6);
-var HelloComponent_1 = __webpack_require__(7);
-var VehicleComponent_1 = __webpack_require__(8);
-__webpack_require__(9);
+var ButtonComponent_1 = __webpack_require__(7);
+var TypographyComponent_1 = __webpack_require__(8);
+var VehicleComponent_1 = __webpack_require__(9);
+__webpack_require__(10);
 var Main = /** @class */ (function () {
     function Main() {
         this.car = new Vehicle_1.default('red', 10, 5, 'Car');
@@ -94,7 +95,10 @@ var Main = /** @class */ (function () {
     Main.prototype.init = function () {
         ReactDOM.render(React.createElement(HeaderComponent_1.HeaderComponent, null), document.getElementById('header'));
         ReactDOM.render(React.createElement(SideNavComponent_1.SideNavComponent, null), document.getElementById('sidenav'));
-        ReactDOM.render(React.createElement(HelloComponent_1.HelloComponent, { compiler: 'TypeScript', framework: 'React' }), document.getElementById('hello'));
+        // Typography
+        ReactDOM.render(React.createElement(TypographyComponent_1.TypographyComponent, null), document.getElementById('typography'));
+        // Button
+        ReactDOM.render(React.createElement(ButtonComponent_1.ButtonComponent, null), document.getElementById('button'));
         ReactDOM.render(React.createElement(VehicleComponent_1.VehicleComponent, { vehicleType: this.car.vehicleType, color: this.car.color, numWheels: this.car.numWheels, age: this.car.age }), document.getElementById('car'));
         ReactDOM.render(React.createElement(VehicleComponent_1.VehicleComponent, { vehicleType: this.motorcycle.vehicleType, color: this.motorcycle.color, numWheels: this.motorcycle.numWheels, age: this.motorcycle.age }), document.getElementById('motorcycle'));
         ReactDOM.render(React.createElement(FooterComponent_1.FooterComponent, null), document.getElementById('footer'));
@@ -247,26 +251,61 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
-var HelloComponent = /** @class */ (function (_super) {
-    __extends(HelloComponent, _super);
-    function HelloComponent() {
+var ButtonComponent = /** @class */ (function (_super) {
+    __extends(ButtonComponent, _super);
+    function ButtonComponent() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    HelloComponent.prototype.render = function () {
-        return React.createElement("h3", null,
-            "Hello from ",
-            this.props.compiler,
-            " and ",
-            this.props.framework,
-            "!");
+    ButtonComponent.prototype.render = function () {
+        return (React.createElement("div", null,
+            React.createElement("button", { className: 'button button--small button--danger' }, "Button Small"),
+            React.createElement("button", { className: 'button button--medium button--success' }, "Button Medium"),
+            React.createElement("button", { className: 'button button--large button--info' }, "Button Small")));
     };
-    return HelloComponent;
+    return ButtonComponent;
 }(React.Component));
-exports.HelloComponent = HelloComponent;
+exports.ButtonComponent = ButtonComponent;
 
 
 /***/ }),
 /* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = __webpack_require__(0);
+var TypographyComponent = /** @class */ (function (_super) {
+    __extends(TypographyComponent, _super);
+    function TypographyComponent() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    TypographyComponent.prototype.render = function () {
+        return (React.createElement("div", null,
+            React.createElement("h1", null, "Typography Heading 1"),
+            React.createElement("h2", null, "Typography Heading 2"),
+            React.createElement("h3", null, "Typography Heading 3"),
+            React.createElement("h4", null, "Typography Heading 4"),
+            React.createElement("h5", null, "Typography Heading 5"),
+            React.createElement("h6", null, "Typography Heading 6")));
+    };
+    return TypographyComponent;
+}(React.Component));
+exports.TypographyComponent = TypographyComponent;
+
+
+/***/ }),
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -309,7 +348,7 @@ exports.VehicleComponent = VehicleComponent;
 
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

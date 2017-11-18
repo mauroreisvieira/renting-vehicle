@@ -19,10 +19,10 @@
 
 .main {
   align-items: center;
-  background: #10a9e7;
+  background: #fff;
   display: block;
   grid-area: main;
-  height: calc(100vh - ((100px + 100px) + (20px * 2) ));
+  min-height: calc(100vh - ((100px + 100px) + (20px * 2) ));
   padding: 20px; }
 
 .footer {
@@ -36,26 +36,26 @@
 
 h1 {
   font-family: "Raleway", sans-serif;
-  font-size: 52px;
-  font-weight: 400;
+  font-size: 42px;
+  font-weight: 300;
   line-height: 1.4;
-  color: #ff4d63;
+  color: #01d097;
   margin: 22px 0;
   text-transform: uppercase; }
 
 h2 {
   font-family: "Raleway", sans-serif;
-  font-size: 44px;
+  font-size: 36px;
   font-weight: 900;
   line-height: 1.4;
-  color: #ff4d63;
+  color: #10a9e7;
   margin: 22px 0;
   text-transform: uppercase; }
 
 h3 {
   font-family: "Raleway", sans-serif;
-  font-size: 36px;
-  font-weight: 600;
+  font-size: 28px;
+  font-weight: 700;
   line-height: 1.4;
   color: #ff4d63;
   margin: 22px 0;
@@ -63,28 +63,28 @@ h3 {
 
 h4 {
   font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 700;
   line-height: 1.4;
-  color: #ff4d63;
+  color: #df1070;
   margin: 22px 0;
   text-transform: uppercase; }
 
 h5 {
   font-family: "Raleway", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 700;
   line-height: 1.4;
-  color: #ff4d63;
+  color: #01d097;
   margin: 22px 0;
   text-transform: uppercase; }
 
 h6 {
   font-family: "Raleway", sans-serif;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 700;
   line-height: 1.4;
-  color: #ff4d63;
+  color: #01d097;
   margin: 22px 0;
   text-transform: uppercase; }
 
@@ -93,7 +93,7 @@ p {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
-  color: #ff4d63; }
+  color: #000; }
 
 a {
   font-family: "Raleway", sans-serif;
@@ -102,7 +102,7 @@ a {
   line-height: 1.4;
   color: #ff4d63; }
   a:hover {
-    color: #ff4d63;
+    color: #df1070;
     text-decoration: none; }
 
 .red {
@@ -248,18 +248,18 @@ a {
     pointer-events: none; }
   .button--large {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
     height: 60px;
     line-height: 52px;
     padding: 0 52px; }
   .button--medium {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
     height: 48px;
     line-height: 40px;
     padding: 0 32px; }
   .button--small {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     height: 40px;
     line-height: 40px;
@@ -276,13 +276,13 @@ a {
   .button--is-loading {
     opacity: .5;
     pointer-events: none; }
-  .button--aqua {
+  .button--danger {
     background-color: #ff4d63;
-    color: #ff4d63;
+    color: #fff;
     overflow: hidden;
     transition: border-color .3s, color .3s; }
-    .button--aqua::before {
-      background-color: #ff4d63;
+    .button--danger::before {
+      background-color: #df1070;
       content: '';
       height: 100%;
       left: 0;
@@ -294,22 +294,22 @@ a {
       width: 150%;
       will-change: transform;
       z-index: -1; }
-    .button--aqua:focus {
+    .button--danger:focus {
       outline: none; }
-    .button--aqua:hover {
-      color: #ff4d63; }
-      .button--aqua:hover::before {
-        background-color: #ff4d63;
+    .button--danger:hover {
+      color: #fff; }
+      .button--danger:hover::before {
+        background-color: #df1070;
         opacity: 1;
         transform: rotate3d(0, 0, 1, 0deg);
         transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1); }
-  .button--yellow {
-    background-color: #ff4d63;
-    color: #ff4d63;
+  .button--success {
+    background-color: #01d097;
+    color: #fff;
     overflow: hidden;
     transition: border-color .3s, color .3s; }
-    .button--yellow::before {
-      background-color: #ff4d63;
+    .button--success::before {
+      background-color: #10a9e7;
       content: '';
       height: 100%;
       left: 0;
@@ -321,21 +321,21 @@ a {
       width: 150%;
       will-change: transform;
       z-index: -1; }
-    .button--yellow:focus {
+    .button--success:focus {
       outline: none; }
-    .button--yellow:hover {
-      color: #ff4d63; }
-      .button--yellow:hover::before {
-        background-color: #ff4d63;
+    .button--success:hover {
+      color: #fff; }
+      .button--success:hover::before {
+        background-color: #10a9e7;
         opacity: 1;
         transform: rotate3d(0, 0, 1, 0deg);
         transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1); }
-  .button--darkblue {
-    background-color: #ff4d63;
-    color: #ff4d63;
+  .button--info {
+    background-color: #10a9e7;
+    color: #fff;
     overflow: hidden;
     transition: border-color .3s, color .3s; }
-    .button--darkblue::before {
+    .button--info::before {
       background-color: #ff4d63;
       content: '';
       height: 100%;
@@ -348,119 +348,11 @@ a {
       width: 150%;
       will-change: transform;
       z-index: -1; }
-    .button--darkblue:focus {
+    .button--info:focus {
       outline: none; }
-    .button--darkblue:hover {
-      color: #ff4d63; }
-      .button--darkblue:hover::before {
-        background-color: #ff4d63;
-        opacity: 1;
-        transform: rotate3d(0, 0, 1, 0deg);
-        transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1); }
-  .button--green {
-    background-color: #ff4d63;
-    color: #ff4d63;
-    overflow: hidden;
-    transition: border-color .3s, color .3s; }
-    .button--green::before {
-      background-color: #ff4d63;
-      content: '';
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      transform: rotate3d(0, 0, 1, -90deg);
-      transform-origin: left bottom;
-      transition: transform .3s, background-color .3s;
-      width: 150%;
-      will-change: transform;
-      z-index: -1; }
-    .button--green:focus {
-      outline: none; }
-    .button--green:hover {
-      color: #ff4d63; }
-      .button--green:hover::before {
-        background-color: #ff4d63;
-        opacity: 1;
-        transform: rotate3d(0, 0, 1, 0deg);
-        transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1); }
-  .button--salmon {
-    background-color: #ff4d63;
-    color: #ff4d63;
-    overflow: hidden;
-    transition: border-color .3s, color .3s; }
-    .button--salmon::before {
-      background-color: #ff4d63;
-      content: '';
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      transform: rotate3d(0, 0, 1, -90deg);
-      transform-origin: left bottom;
-      transition: transform .3s, background-color .3s;
-      width: 150%;
-      will-change: transform;
-      z-index: -1; }
-    .button--salmon:focus {
-      outline: none; }
-    .button--salmon:hover {
-      color: #ff4d63; }
-      .button--salmon:hover::before {
-        background-color: #ff4d63;
-        opacity: 1;
-        transform: rotate3d(0, 0, 1, 0deg);
-        transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1); }
-  .button--white {
-    background-color: #ff4d63;
-    color: #ff4d63;
-    overflow: hidden;
-    transition: border-color .3s, color .3s; }
-    .button--white::before {
-      background-color: #ff4d63;
-      content: '';
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      transform: rotate3d(0, 0, 1, -90deg);
-      transform-origin: left bottom;
-      transition: transform .3s, background-color .3s;
-      width: 150%;
-      will-change: transform;
-      z-index: -1; }
-    .button--white:focus {
-      outline: none; }
-    .button--white:hover {
-      color: #ff4d63; }
-      .button--white:hover::before {
-        background-color: #ff4d63;
-        opacity: 1;
-        transform: rotate3d(0, 0, 1, 0deg);
-        transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1); }
-  .button--black {
-    background-color: #ff4d63;
-    color: #ff4d63;
-    overflow: hidden;
-    transition: border-color .3s, color .3s; }
-    .button--black::before {
-      background-color: #ff4d63;
-      content: '';
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      transform: rotate3d(0, 0, 1, -90deg);
-      transform-origin: left bottom;
-      transition: transform .3s, background-color .3s;
-      width: 150%;
-      will-change: transform;
-      z-index: -1; }
-    .button--black:focus {
-      outline: none; }
-    .button--black:hover {
-      color: #ff4d63; }
-      .button--black:hover::before {
+    .button--info:hover {
+      color: #fff; }
+      .button--info:hover::before {
         background-color: #ff4d63;
         opacity: 1;
         transform: rotate3d(0, 0, 1, 0deg);
@@ -473,8 +365,13 @@ body {
   grid-column-gap: 20px;
   grid-row-gap: 20px;
   grid-template-areas: 'header' 'sidenav' 'main' 'footer';
-  height: 100vh;
   margin: 0 auto;
+  min-height: 100vh;
   width: 100%; }
+
+#button div {
+  display: flex; }
+  #button div .button {
+    margin-right: 10px; }
 
 /*# sourceMappingURL=style.css.map*/

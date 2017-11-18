@@ -1,8 +1,8 @@
 .main {
   align-items: center;
-  background: map-get($u-color-blue, 'base');
+  background: $u-color-white;
   display: block;
   grid-area: main;
-  height: calc(100vh - ((#{$theme-header-height} + #{$theme-footer-height}) + (#{$theme-gutter} * 2) ));
+  min-height: calc(100vh - ((#{$theme-header-height} + #{$theme-footer-height}) + (#{$theme-gutter} * 2) ));
   padding: $theme-padding;
 }

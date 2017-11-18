@@ -6,7 +6,10 @@ import Vehicle from './model/Vehicle';
 import { FooterComponent } from './components/layout/FooterComponent';
 import { HeaderComponent } from './components/layout/HeaderComponent';
 import { SideNavComponent } from './components/layout/SideNavComponent';
-import { HelloComponent } from './components/HelloComponent';
+
+import { ButtonComponent } from './components/ButtonComponent';
+import { TypographyComponent } from './components/TypographyComponent';
+
 import {VehicleComponent} from './components/VehicleComponent';
 
 import '../scss/pages/dashboard.scss';
@@ -27,27 +30,31 @@ export default class Main {
             <HeaderComponent />,
             document.getElementById('header')
         );
-
         ReactDOM.render(
             <SideNavComponent />,
             document.getElementById('sidenav')
         );
 
+        // Typography
         ReactDOM.render(
-            <HelloComponent compiler='TypeScript' framework='React' />,
-            document.getElementById('hello')
+            <TypographyComponent />,
+            document.getElementById('typography')
+        );
+
+        // Button
+        ReactDOM.render(
+            <ButtonComponent />,
+            document.getElementById('button')
         );
 
         ReactDOM.render(
             <VehicleComponent vehicleType={this.car.vehicleType} color={this.car.color} numWheels={this.car.numWheels} age={this.car.age} />,
             document.getElementById('car')
         );
-
         ReactDOM.render(
             <VehicleComponent vehicleType={this.motorcycle.vehicleType} color={this.motorcycle.color} numWheels={this.motorcycle.numWheels} age={this.motorcycle.age} />,
             document.getElementById('motorcycle')
         );
-
         ReactDOM.render(
             <FooterComponent />,
             document.getElementById('footer')
