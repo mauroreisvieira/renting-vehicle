@@ -1,0 +1,30 @@
+// Global
+@import '../utilities/variables';
+
+// Layout
+@import '../layout/header';
+@import '../layout/sidenav';
+@import '../layout/main';
+@import '../layout/footer';
+
+// Components
+@import '../components/typography/index';
+@import '../components/color/index';
+@import '../components/button/index';
+
+body {
+  background-color: $u-color-white;
+  display: grid;
+  grid-auto-columns: auto;
+  grid-column-gap: $theme-gutter;
+  grid-row-gap: $theme-gutter;
+  grid-template-areas:
+  'header'
+  'sidenav'
+  'main'
+  'footer';
+  height: 100vh;
+  margin: 0 auto;
+  width: 100%;
+}
+

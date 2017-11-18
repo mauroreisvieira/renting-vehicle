@@ -1,6 +1,6 @@
 .header {
   align-items: center;
-  background-color: $color-red;
+  background-color: map-get($u-color-green, 'base');
   display: flex;
   grid-area: header;
   height: $theme-header-height;

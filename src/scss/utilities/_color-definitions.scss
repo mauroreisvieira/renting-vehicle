@@ -1,0 +1,45 @@
+$u-color-red: (
+  'base': #ff4d63,
+  'lighten': #ff4d63,
+  'darken': #ff4d63,
+  'accent': #ff4d63
+);
+
+$u-color-pink: (
+  'base': #df1070,
+  'lighten': #df1070,
+  'darken': #df1070,
+  'accent': #df1070
+);
+
+$u-color-green: (
+  'base': #01d097,
+  'lighten': #01d097,
+  'darken': #01d097,
+  'accent': #01d097
+);
+
+$u-color-blue: (
+  'base': #10a9e7,
+  'lighten': #10a9e7,
+  'darken': #10a9e7,
+  'accent': #10a9e7
+);
+
+$u-color-grey: (
+  'base': #d1dded,
+  'lighten': #d1dded,
+  'darken': #d1dded,
+  'accent': #d1dded
+);
+
+$u-colors: (
+  'red': $u-color-red,
+  'pink': $u-color-pink,
+  'green': $u-color-green,
+  'blue': $u-color-blue,
+  'grey': $u-color-grey
+) !default;
+
+$u-color-white: #fff;
+$u-color-black: #000;

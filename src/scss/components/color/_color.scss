@@ -1,0 +1,20 @@
+@each $color-name, $color in $u-colors {
+  @each $color-type, $color-value in $color {
+    @if $color-type == 'base' {
+      .#{$color-name} {
+        background-color: $color-value !important;
+      }
+      .#{$color-name}-text {
+        color: $color-value !important;
+      }
+    }
+    @else {
+      .#{$color-name}.#{$color-type} {
+        background-color: $color-value !important;
+      }
+      .#{$color-name}-text.text-#{$color-type} {
+        color: $color-value !important;
+      }
+    }
+  }
+}

@@ -1,8 +1,8 @@
 @mixin typography(
-  $font-size : $font-sm ,
+  $font-size: $font-sm ,
   $font-weight: $font-normal,
-  $line-height : 1.4,
-  $font : $font-family-base
+  $line-height: 1.4,
+  $font: $font-family-base
   ) {
 
   font: {
@@ -13,16 +13,12 @@
   line-height: $line-height;
 }
 
-/**
- * Calculate column size percentage
- */
+// Calculate column size percentage
 @function get-col-percent($column-num) {
   @return $column-num / $columns * 100%;
 }
 
-/**
- * Spacing mixin to create uniform margin/padding
- */
+// Spacing mixin to create uniform margin/padding
 @mixin spacing( $value, $type: margin, $orientation: vertical ) {
   @if $orientation == vertical {
     #{ $type }-top: $value;
@@ -33,43 +29,26 @@
   }
 }
 
-@mixin between-two-sizes($max-w : $desktop, $min-w : $tablet) {
+@mixin between-two-sizes($max-w: $desktop, $min-w: $tablet) {
   @media (max-width: $max-w) and (min-width: $min-w) {
     @content;
   }
 }
 
-@mixin mobile($max-w : $mobile) {
+@mixin mobile($max-w: $mobile) {
   @media (max-width: $max-w) {
     @content;
   }
 }
 
-@mixin tablet($max-w : $tablet) {
+@mixin tablet($max-w: $tablet) {
   @media (max-width: $max-w) {
     @content;
   }
 }
 
-@mixin desktop($max-w : $desktop) {
+@mixin desktop($max-w: $desktop) {
   @media (min-width: $max-w) {
     @content;
   }
 }
-
-@mixin animations($class, $transform) {
-  @keyframes #{$class} {
-    from {
-      opacity: 0;
-      transform: $transform;
-    }
-    to {
-      opacity: 1;
-      transform: none;
-    }
-  }
-  .#{$class} {
-    animation-name: #{$class};
-  }
-}
-

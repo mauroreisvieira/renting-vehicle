@@ -1,26 +1,10 @@
-// Colors
-$color-dark      : #0E0606;
-$color-black     : #000;
-$color-white     : #fff;
-$color-yellow    : #FDBC59;
-$color-orange    : #ff974e;
-$color-red       : #ff4d63;
-$color-salmon    : #f86755; // New
-$color-pink      : #DF1070;
-$color-darkgrey  : #424242; // New
-$color-violet    : #6F1EFB;
-$color-blue      : #10A9E7;
-$color-darkblue  : #072c61; // New
-$color-cyan      : #0193a3; // New
-$color-aqua      : #36f7ce; // New
-$color-green     : #01D097;
-$color-darkgreen : #02202C;
-$color-greylight : #D1DDED; // New
+@import 'color-definitions';
+@import 'mixins';
 
 // Default Colors
-$color-text-default   : $color-black ;
-$color-title-default  : $color-salmon;
-$color-border-default : $color-greylight;
+$color-text-default: map-get($u-color-red, 'base');
+$color-title-default: map-get($u-color-red, 'base');
+$color-border-default: map-get($u-color-red, 'base');
 
 // Other
 $border-radius-default : 2px;
@@ -33,36 +17,23 @@ $font-family-base    : 'Raleway', sans-serif;
 $font-family-default : 'Open Sans', sans-serif;
 
 // Font Size
-$font-xx-small  : 10px;
-$font-x-small   : 12px;
-$font-small     : 14px;
-$font-medium    : 16px;
-$font-large     : 20px;
-$font-x-large   : 28px;
-$font-xx-large  : 36px;
-$font-xxx-large : 42px;
+$font-xx-small: 10px;
+$font-x-small: 12px;
+$font-small: 14px;
+$font-medium: 16px;
+$font-large: 20px;
+$font-x-large: 28px;
+$font-xx-large: 36px;
+$font-xxx-large: 42px;
 
 // Font Weight
-$font-thin       : 300;
-$font-light      : 400;
-$font-normal     : 500;
-$font-bold       : 600;
-$font-extra-bold : 900;
+$font-thin: 300;
+$font-light: 400;
+$font-normal: 500;
+$font-bold: 600;
+$font-extra-bold: 900;
 
-// Buttons
-$headings: (
-  'h1' : ($color-black, 52px, $font-light),
-  'h2' : ($color-black, 44px, $font-extra-bold),
-  'h3' : ($color-black, 36px, $font-bold),
-  'h4' : ($color-black, 26px, $font-bold),
-  'h5' : ($color-darkgreen, 20px, $font-bold),
-  'h6' : ($color-greylight, 16px, $font-bold)
-);
-
-// Content Width
-$content-width-default: 1024px;
-
-$grid: $content-width-default;
+$grid: 100%;
 $columns: 12;
 $gutter: 15px;
 
@@ -82,16 +53,6 @@ $breakpoints: (
   (large, $desktop)
 );
 
-// Buttons
-$buttons: (
-  'aqua'     : ($color-aqua, $color-white, $color-salmon, $color-white),
-  'yellow'   : ($color-yellow, $color-white, $color-salmon, $color-white),
-  'darkblue' : ($color-darkblue, $color-white, $color-yellow, $color-white),
-  'green'    : ($color-green, $color-white, $color-cyan, $color-white),
-  'salmon'   : ($color-salmon, $color-white, $color-aqua, $color-black),
-  'white'    : ($color-white, $color-black, $color-salmon, $color-white),
-  'black'    : ($color-black, $color-white, $color-salmon, $color-black)
-);
 
 
 $theme-gutter: 20px;

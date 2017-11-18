@@ -1,0 +1,16 @@
+@import '../../utilities/variables';
+@import '../../utilities/mixins';
+
+$c-button-border-radius-buttons: 10px;
+
+$buttons: (
+  'aqua': (map-get($u-color-red, 'base'), map-get($u-color-red, 'base'), map-get($u-color-red, 'base'), map-get($u-color-red, 'base')),
+  'yellow': (map-get($u-color-red, 'base'), map-get($u-color-red, 'base'), map-get($u-color-red, 'base'), map-get($u-color-red, 'base')),
+  'darkblue': (map-get($u-color-red, 'base'), map-get($u-color-red, 'base'), map-get($u-color-red, 'base'), map-get($u-color-red, 'base')),
+  'green': (map-get($u-color-red, 'base'), map-get($u-color-red, 'base'), map-get($u-color-red, 'base'), map-get($u-color-red, 'base')),
+  'salmon': (map-get($u-color-red, 'base'), map-get($u-color-red, 'base'), map-get($u-color-red, 'base'), map-get($u-color-red, 'base')),
+  'white': (map-get($u-color-red, 'base'), map-get($u-color-red, 'base'), map-get($u-color-red, 'base'), map-get($u-color-red, 'base')),
+  'black': (map-get($u-color-red, 'base'), map-get($u-color-red, 'base'), map-get($u-color-red, 'base'), map-get($u-color-red, 'base'))
+);
+
+@import 'button';

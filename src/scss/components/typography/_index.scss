@@ -1,0 +1,13 @@
+@import '../../utilities/variables';
+@import '../../utilities/mixins';
+
+$headings: (
+  'h1': (map-get($u-color-red, 'base'), 52px, $font-light),
+  'h2': (map-get($u-color-red, 'base'), 44px, $font-extra-bold),
+  'h3': (map-get($u-color-red, 'base'), 36px, $font-bold),
+  'h4': (map-get($u-color-red, 'base'), 26px, $font-bold),
+  'h5': (map-get($u-color-red, 'base'), 20px, $font-bold),
+  'h6': (map-get($u-color-red, 'base'), 16px, $font-bold)
+);
+
+@import 'typography';

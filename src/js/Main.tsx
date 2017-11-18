@@ -9,7 +9,7 @@ import { SideNavComponent } from './components/layout/SideNavComponent';
 import { HelloComponent } from './components/HelloComponent';
 import {VehicleComponent} from './components/VehicleComponent';
 
-import '../scss/app.scss';
+import '../scss/pages/dashboard.scss';
 
 export default class Main {
     public car: Vehicle;

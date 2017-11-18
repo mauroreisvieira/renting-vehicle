@@ -1,6 +1,6 @@
 .footer {
   align-items: center;
-  background-color: $color-green;
+  background-color: map-get($u-color-red, 'base');
   display: flex;
   grid-area: footer;
   height: $theme-footer-height;
