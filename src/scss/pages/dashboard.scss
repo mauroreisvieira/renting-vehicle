@@ -1,0 +1,28 @@
+// Global
+@import '../utilities/variables';
+
+// Layout
+@import '../layout/header';
+@import '../layout/sidenav';
+@import '../layout/main';
+@import '../layout/footer';
+
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  background-color: $u-color-white;
+  display: grid;
+  grid-auto-columns: auto;
+  grid-column-gap: $theme-gutter;
+  // grid-row-gap: $theme-gutter;
+  grid-template-areas:
+  'sidenav header'
+  'sidenav main'
+  'sidenav footer';
+  margin: 0 auto;
+  min-height: 100vh;
+  width: 100%;
+}

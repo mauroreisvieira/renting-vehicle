@@ -15,7 +15,7 @@
   grid-area: sidenav;
   justify-content: center;
   text-align: center;
-  width: 100%; }
+  width: 100px; }
 
 .main {
   align-items: center;
@@ -34,7 +34,8 @@
   grid-area: footer;
   height: 100px;
   justify-content: center;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
 
 h1 {
   font-family: "Raleway", sans-serif;
@@ -787,4 +788,4 @@ body {
     #color .box p {
       color: #fff; }
 
-/*# sourceMappingURL=style.css.map*/
+/*# sourceMappingURL=styleguide.css.map*/

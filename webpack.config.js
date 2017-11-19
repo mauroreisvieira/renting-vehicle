@@ -4,7 +4,8 @@ const extractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry : {
-        bundle: './src/js/Main.tsx'
+        styleguide: './src/js/Styleguide.tsx',
+        dashboard: './src/js/Dashboard.tsx'
     },
     output: {
         path: path.resolve(__dirname, 'dist/js'),
@@ -56,7 +57,7 @@ module.exports = {
     },
 
     plugins: [
-        new extractTextPlugin('../css/style.css', {
+        new extractTextPlugin('../css/[name].css', {
             allChunks: true
         })
     ],

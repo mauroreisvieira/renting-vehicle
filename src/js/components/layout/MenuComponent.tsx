@@ -7,7 +7,7 @@ export class MenuComponent extends React.Component {
                     <a href='./index.html' className='menu__item__link'>Home</a>
                 </li>
                 <li className='menu__item menu__item--active'>
-                    <a href='./test.html' className='menu__item__link'>Styleguide</a>
+                    <a href='./styleguide.html' className='menu__item__link'>Styleguide</a>
                 </li>
             </ul>);
     }
