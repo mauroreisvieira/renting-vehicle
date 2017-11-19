@@ -782,8 +782,7 @@ body {
 #color {
   margin: 20px 0; }
   #color .box {
-    margin-bottom: 20px;
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center; }
     #color .box p {
       color: #fff; }

@@ -270,14 +270,29 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
 var ColorComponent = /** @class */ (function (_super) {
     __extends(ColorComponent, _super);
-    function ColorComponent() {
-        return _super !== null && _super.apply(this, arguments) || this;
+    function ColorComponent(props) {
+        var _this = _super.call(this, props) || this;
+        _this.colors = [];
+        _this.colors = [
+            'red', {
+                base: '#f44336',
+                lighten: '#ff4d63',
+                darken: '#ff4d63',
+                accent: '#ff4d63',
+            },
+        ];
+        console.log(_this.colors);
+        return _this;
     }
     ColorComponent.prototype.render = function () {
         return (React.createElement("div", { className: 'row' },
             React.createElement("div", { className: 'col-small-12 col-medium-12 col-large-12' },
                 React.createElement("h1", { className: 'text-red' }, "Color")),
             React.createElement("div", { className: 'col-small-3 col-medium-3 col-large-3' },
+                React.createElement("div", { className: 'box bg-pink' },
+                    React.createElement("p", null, "$u-color-pink (Base)")),
+                React.createElement("div", { className: 'box bg-pink' },
+                    React.createElement("p", null, "$u-color-pink (Base)")),
                 React.createElement("div", { className: 'box bg-pink' },
                     React.createElement("p", null, "$u-color-pink (Base)"))),
             React.createElement("div", { className: 'col-small-3 col-medium-3 col-large-3' },

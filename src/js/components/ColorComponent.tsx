@@ -1,6 +1,22 @@
 import * as React from 'react';
 
 export class ColorComponent extends React.Component {
+    private colors: any = [];
+
+    constructor(props: any){
+        super(props);
+
+        this.colors = [
+            'red': {
+                base: '#f44336',
+                lighten: '#ff4d63',
+                darken: '#ff4d63',
+                accent: '#ff4d63',
+            }
+        ];
+        console.log(this.colors);
+    }
+
     render() {
         return (
             <div className='row'>
@@ -8,6 +24,8 @@ export class ColorComponent extends React.Component {
                     <h1 className='text-red'>Color</h1>
                 </div>
                 <div className='col-small-3 col-medium-3 col-large-3'>
+                    <div className='box bg-pink'><p>$u-color-pink (Base)</p></div>
+                    <div className='box bg-pink'><p>$u-color-pink (Base)</p></div>
                     <div className='box bg-pink'><p>$u-color-pink (Base)</p></div>
                 </div>
                 <div className='col-small-3 col-medium-3 col-large-3'>
