@@ -1,5 +1,5 @@
 $u-color-red: (
-  'base': #ff4d63,
+  'base': #f44336,
   'lighten': #ff4d63,
   'darken': #ff4d63,
   'accent': #ff4d63
@@ -12,30 +12,78 @@ $u-color-pink: (
   'accent': #df1070
 );
 
+$u-color-yellow: (
+  'base': #fdbc59,
+  'lighten': #fdbc59,
+  'darken': #fdbc59,
+  'accent': #fdbc59
+);
+
+$u-color-orange: (
+  'base': #ff974e,
+  'lighten': #ff974e,
+  'darken': #ff974e,
+  'accent': #ff974e
+);
+
+$u-color-salmon: (
+  'base': #f86755,
+  'lighten': #f86755,
+  'darken': #f86755,
+  'accent': #f86755
+);
+
+$u-color-violet: (
+  'base': #6f1efb,
+  'lighten': #6f1efb,
+  'darken': #6f1efb,
+  'accent': #6f1efb
+);
+
+$u-color-cyan: (
+  'base': #0193a3,
+  'lighten': #0193a3,
+  'darken': #0193a3,
+  'accent': #0193a3
+);
+
+$u-color-aqua: (
+  'base': #36f7ce,
+  'lighten': #36f7ce,
+  'darken': #36f7ce,
+  'accent': #36f7ce
+);
+
 $u-color-green: (
   'base': #01d097,
   'lighten': #01d097,
-  'darken': #01d097,
+  'darken': #00a074,
   'accent': #01d097
 );
 
 $u-color-blue: (
   'base': #10a9e7,
   'lighten': #10a9e7,
-  'darken': #10a9e7,
+  'darken': #072c61,
   'accent': #10a9e7
 );
 
 $u-color-grey: (
   'base': #d1dded,
   'lighten': #d1dded,
-  'darken': #d1dded,
+  'darken': #424242,
   'accent': #d1dded
 );
 
 $u-colors: (
   'red': $u-color-red,
   'pink': $u-color-pink,
+  'yellow': $u-color-yellow,
+  'orange': $u-color-orange,
+  'salmon': $u-color-salmon,
+  'violet': $u-color-violet,
+  'cyan': $u-color-cyan,
+  'aqua': $u-color-aqua,
   'green': $u-color-green,
   'blue': $u-color-blue,
   'grey': $u-color-grey

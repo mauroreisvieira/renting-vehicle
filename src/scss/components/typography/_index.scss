@@ -20,17 +20,20 @@ $c-typography-font-weight-bold: 700;
 $c-typography-font-weight-extra-bold: 900;
 
 // Color Heading
-$c-typography-color-heading-1: map-get($u-color-green, 'base');
-$c-typography-color-heading-2: map-get($u-color-blue, 'base');
-$c-typography-color-heading-3: map-get($u-color-red, 'base');
-$c-typography-color-heading-4: map-get($u-color-pink, 'base');
-$c-typography-color-heading-5: map-get($u-color-green, 'base');
-$c-typography-color-heading-6: map-get($u-color-green, 'base');
+$c-typography-color-heading-1: $u-color-black;
+$c-typography-color-heading-2: $u-color-black;
+$c-typography-color-heading-3: $u-color-black;
+$c-typography-color-heading-4: $u-color-black;
+$c-typography-color-heading-5: $u-color-black;
+$c-typography-color-heading-6: $u-color-black;
 
 // Color Text
 $c-typography-color-text: $u-color-black;
 $c-typography-color-link: map-get($u-color-red, 'base');
 $c-typography-color-link-hover: map-get($u-color-pink, 'base');
+
+// Baseline
+$c-typography-baseline-heading: $u-baseline * 3;
 
 $headings: (
   'h1': ($c-typography-color-heading-1, $c-typography-font-size-large-xxx, $c-typography-font-weight-light),

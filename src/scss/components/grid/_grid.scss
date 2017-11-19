@@ -1,27 +1,4 @@
-.gird {
-  width: 100%;
-
-  @include tablet() {
-    padding: 60px 0;
-  }
-}
-
-.container {
-  margin: auto;
-  max-width: $grid;
-  padding: 0 20px;
-
-  @include tablet() {
-    max-width: 80%;
-  }
-
-  @include mobile() {
-    max-width: 80%;
-  }
-}
-/**
- * Row wrapper class, flex box parent.
- */
+// Row wrapper class, flex box parent.
  .#{ $class-row } {
   box-sizing: border-box;
   display: flex;

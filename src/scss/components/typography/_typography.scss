@@ -2,8 +2,7 @@
   #{$key} {
     @include typography(nth($values, 2), nth($values, 3));
     color: nth($values, 1);
-    margin: 22px 0;
-    text-transform: uppercase;
+    margin: $c-typography-baseline-heading 0;
   }
 }
 

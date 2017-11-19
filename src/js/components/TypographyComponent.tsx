@@ -3,13 +3,19 @@ import * as React from 'react';
 export class TypographyComponent extends React.Component {
     render() {
         return (
-            <div>
-                <h1>Typography Heading 1</h1>
-                <h2>Typography Heading 2</h2>
-                <h3>Typography Heading 3</h3>
-                <h4>Typography Heading 4</h4>
-                <h5>Typography Heading 5</h5>
-                <h6>Typography Heading 6</h6>
+
+            <div className='row'>
+                <div className='col-small-12 col-medium-12 col-large-12'>
+                    <h1 className='text-red'>Typography</h1>
+                </div>
+                <div className='col-small-12 col-medium-12 col-large-12'>
+                    <h1>Heading 1</h1>
+                    <h2>Heading 2</h2>
+                    <h3>Heading 3</h3>
+                    <h4>Heading 4</h4>
+                    <h5>Heading 5</h5>
+                    <h6>Heading 6</h6>
+                </div>
             </div>
         );
     }

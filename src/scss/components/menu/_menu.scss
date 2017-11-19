@@ -1,4 +1,4 @@
-.nav {
+.menu {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -11,10 +11,7 @@
     padding: 20px 0;
 
     &__link {
-      color: $color-darkblue;
       display: block;
-      font-size: $font-small;
-      font-weight: $font-bold;
       padding: 4px 14px;
       position: relative;
       text-decoration: none;

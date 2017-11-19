@@ -1,16 +1,24 @@
 @import '../../utilities/variables';
 @import '../../utilities/mixins';
 
-$atom-button-border-radius-buttons: 10px;
+$grid: 100%;
+$columns: 12;
+$gutter: 15px;
 
-$buttons: (
-  'aqua'     : ($color-aqua, $color-white, $color-salmon, $color-white),
-  'yellow'   : ($color-yellow, $color-white, $color-salmon, $color-white),
-  'darkblue' : ($color-darkblue, $color-white, $color-yellow, $color-white),
-  'green'    : ($color-green, $color-white, $color-cyan, $color-white),
-  'salmon'   : ($color-salmon, $color-white, $color-aqua, $color-black),
-  'white'    : ($color-white, $color-black, $color-salmon, $color-white),
-  'black'    : ($color-black, $color-white, $color-salmon, $color-black)
+$class-row: 'row';
+$class-cell: 'col';
+$class-off: 'off';
+
+// Breakpoints
+$min-device : 280px;
+$mobile : 767px;
+$tablet : 992px;
+$desktop : 1200px;
+
+$breakpoints: (
+  (small, $min-device),
+  (medium, $tablet),
+  (large, $desktop)
 );
 
-@import 'buttons';
+@import 'grid';

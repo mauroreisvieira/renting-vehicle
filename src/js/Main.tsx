@@ -5,14 +5,15 @@ import Vehicle from './model/Vehicle';
 
 import { FooterComponent } from './components/layout/FooterComponent';
 import { HeaderComponent } from './components/layout/HeaderComponent';
-import { SideNavComponent } from './components/layout/SideNavComponent';
+import { MenuComponent } from './components/layout/MenuComponent';
 
 import { ButtonComponent } from './components/ButtonComponent';
 import { TypographyComponent } from './components/TypographyComponent';
+import { ColorComponent } from './components/ColorComponent';
 
 import {VehicleComponent} from './components/VehicleComponent';
 
-import '../scss/pages/dashboard.scss';
+import '../scss/pages/styleguide.scss';
 
 export default class Main {
     public car: Vehicle;
@@ -31,7 +32,7 @@ export default class Main {
             document.getElementById('header')
         );
         ReactDOM.render(
-            <SideNavComponent />,
+            <MenuComponent />,
             document.getElementById('sidenav')
         );
 
@@ -47,14 +48,21 @@ export default class Main {
             document.getElementById('button')
         );
 
+        // Color
         ReactDOM.render(
-            <VehicleComponent vehicleType={this.car.vehicleType} color={this.car.color} numWheels={this.car.numWheels} age={this.car.age} />,
-            document.getElementById('car')
+            <ColorComponent />,
+            document.getElementById('color')
         );
-        ReactDOM.render(
-            <VehicleComponent vehicleType={this.motorcycle.vehicleType} color={this.motorcycle.color} numWheels={this.motorcycle.numWheels} age={this.motorcycle.age} />,
-            document.getElementById('motorcycle')
-        );
+
+        // ReactDOM.render(
+        //     <VehicleComponent vehicleType={this.car.vehicleType} color={this.car.color} numWheels={this.car.numWheels} age={this.car.age} />,
+        //     document.getElementById('car')
+        // );
+        // ReactDOM.render(
+        //     <VehicleComponent vehicleType={this.motorcycle.vehicleType} color={this.motorcycle.color} numWheels={this.motorcycle.numWheels} age={this.motorcycle.age} />,
+        //     document.getElementById('motorcycle')
+        // );
+
         ReactDOM.render(
             <FooterComponent />,
             document.getElementById('footer')

@@ -81,10 +81,10 @@ var ReactDOM = __webpack_require__(2);
 var Vehicle_1 = __webpack_require__(3);
 var FooterComponent_1 = __webpack_require__(4);
 var HeaderComponent_1 = __webpack_require__(5);
-var SideNavComponent_1 = __webpack_require__(6);
+var MenuComponent_1 = __webpack_require__(6);
 var ButtonComponent_1 = __webpack_require__(7);
 var TypographyComponent_1 = __webpack_require__(8);
-var VehicleComponent_1 = __webpack_require__(9);
+var ColorComponent_1 = __webpack_require__(9);
 __webpack_require__(10);
 var Main = /** @class */ (function () {
     function Main() {
@@ -94,13 +94,21 @@ var Main = /** @class */ (function () {
     }
     Main.prototype.init = function () {
         ReactDOM.render(React.createElement(HeaderComponent_1.HeaderComponent, null), document.getElementById('header'));
-        ReactDOM.render(React.createElement(SideNavComponent_1.SideNavComponent, null), document.getElementById('sidenav'));
+        ReactDOM.render(React.createElement(MenuComponent_1.MenuComponent, null), document.getElementById('sidenav'));
         // Typography
         ReactDOM.render(React.createElement(TypographyComponent_1.TypographyComponent, null), document.getElementById('typography'));
         // Button
         ReactDOM.render(React.createElement(ButtonComponent_1.ButtonComponent, null), document.getElementById('button'));
-        ReactDOM.render(React.createElement(VehicleComponent_1.VehicleComponent, { vehicleType: this.car.vehicleType, color: this.car.color, numWheels: this.car.numWheels, age: this.car.age }), document.getElementById('car'));
-        ReactDOM.render(React.createElement(VehicleComponent_1.VehicleComponent, { vehicleType: this.motorcycle.vehicleType, color: this.motorcycle.color, numWheels: this.motorcycle.numWheels, age: this.motorcycle.age }), document.getElementById('motorcycle'));
+        // Color
+        ReactDOM.render(React.createElement(ColorComponent_1.ColorComponent, null), document.getElementById('color'));
+        // ReactDOM.render(
+        //     <VehicleComponent vehicleType={this.car.vehicleType} color={this.car.color} numWheels={this.car.numWheels} age={this.car.age} />,
+        //     document.getElementById('car')
+        // );
+        // ReactDOM.render(
+        //     <VehicleComponent vehicleType={this.motorcycle.vehicleType} color={this.motorcycle.color} numWheels={this.motorcycle.numWheels} age={this.motorcycle.age} />,
+        //     document.getElementById('motorcycle')
+        // );
         ReactDOM.render(React.createElement(FooterComponent_1.FooterComponent, null), document.getElementById('footer'));
     };
     return Main;
@@ -216,21 +224,21 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
-var SideNavComponent = /** @class */ (function (_super) {
-    __extends(SideNavComponent, _super);
-    function SideNavComponent() {
+var MenuComponent = /** @class */ (function (_super) {
+    __extends(MenuComponent, _super);
+    function MenuComponent() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    SideNavComponent.prototype.render = function () {
-        return (React.createElement("ul", { className: 'nav' },
-            React.createElement("li", { className: 'nav__item' },
-                React.createElement("a", { href: './index.html', className: 'nav__item__link' }, "Home")),
-            React.createElement("li", { className: 'nav__item nav__item--active' },
-                React.createElement("a", { href: './test.html', className: 'nav__item__link' }, "Test"))));
+    MenuComponent.prototype.render = function () {
+        return (React.createElement("ul", { className: 'menu' },
+            React.createElement("li", { className: 'menu__item' },
+                React.createElement("a", { href: './index.html', className: 'menu__item__link' }, "Home")),
+            React.createElement("li", { className: 'menu__item menu__item--active' },
+                React.createElement("a", { href: './test.html', className: 'menu__item__link' }, "Styleguide"))));
     };
-    return SideNavComponent;
+    return MenuComponent;
 }(React.Component));
-exports.SideNavComponent = SideNavComponent;
+exports.MenuComponent = MenuComponent;
 
 
 /***/ }),
@@ -257,10 +265,15 @@ var ButtonComponent = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     ButtonComponent.prototype.render = function () {
-        return (React.createElement("div", null,
-            React.createElement("button", { className: 'button button--small button--danger' }, "Button Small"),
-            React.createElement("button", { className: 'button button--medium button--success' }, "Button Medium"),
-            React.createElement("button", { className: 'button button--large button--info' }, "Button Small")));
+        return (React.createElement("div", { className: 'row' },
+            React.createElement("div", { className: 'col-small-12 col-medium-12 col-large-12' },
+                React.createElement("h1", { className: 'text-red' }, "Button")),
+            React.createElement("div", { className: 'col-small-12 col-medium-12 col-large-12' },
+                React.createElement("div", null,
+                    React.createElement("button", { className: 'button button--small button--danger' }, "Button Small"),
+                    React.createElement("button", { className: 'button button--medium button--success' }, "Button Medium"),
+                    React.createElement("button", { className: 'button button--large button--info' }, "Button Large"),
+                    React.createElement("button", { className: 'button button--large button--default', disabled: true }, "Button Disabled")))));
     };
     return ButtonComponent;
 }(React.Component));
@@ -291,13 +304,16 @@ var TypographyComponent = /** @class */ (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     TypographyComponent.prototype.render = function () {
-        return (React.createElement("div", null,
-            React.createElement("h1", null, "Typography Heading 1"),
-            React.createElement("h2", null, "Typography Heading 2"),
-            React.createElement("h3", null, "Typography Heading 3"),
-            React.createElement("h4", null, "Typography Heading 4"),
-            React.createElement("h5", null, "Typography Heading 5"),
-            React.createElement("h6", null, "Typography Heading 6")));
+        return (React.createElement("div", { className: 'row' },
+            React.createElement("div", { className: 'col-small-12 col-medium-12 col-large-12' },
+                React.createElement("h1", { className: 'text-red' }, "Typography")),
+            React.createElement("div", { className: 'col-small-12 col-medium-12 col-large-12' },
+                React.createElement("h1", null, "Heading 1"),
+                React.createElement("h2", null, "Heading 2"),
+                React.createElement("h3", null, "Heading 3"),
+                React.createElement("h4", null, "Heading 4"),
+                React.createElement("h5", null, "Heading 5"),
+                React.createElement("h6", null, "Heading 6"))));
     };
     return TypographyComponent;
 }(React.Component));
@@ -322,29 +338,55 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
-var VehicleComponent = /** @class */ (function (_super) {
-    __extends(VehicleComponent, _super);
-    function VehicleComponent() {
+var ColorComponent = /** @class */ (function (_super) {
+    __extends(ColorComponent, _super);
+    function ColorComponent() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    VehicleComponent.prototype.render = function () {
-        return React.createElement("div", null,
-            React.createElement("h4", null,
-                "VehicleType: ",
-                this.props.vehicleType),
-            React.createElement("div", null,
-                "Color: ",
-                this.props.color),
-            React.createElement("div", null,
-                "Wheels: ",
-                this.props.numWheels),
-            React.createElement("div", null,
-                "Age: ",
-                this.props.age));
+    ColorComponent.prototype.render = function () {
+        return (React.createElement("div", { className: 'row' },
+            React.createElement("div", { className: 'col-small-12 col-medium-12 col-large-12' },
+                React.createElement("h1", { className: 'text-red' }, "Color")),
+            React.createElement("div", { className: 'col-small-3 col-medium-3 col-large-3' },
+                React.createElement("div", { className: 'box bg-pink' },
+                    React.createElement("p", null, "$u-color-pink (Base)"))),
+            React.createElement("div", { className: 'col-small-3 col-medium-3 col-large-3' },
+                React.createElement("div", { className: 'box bg-red' },
+                    React.createElement("p", null, "$u-color-red (Base)"))),
+            React.createElement("div", { className: 'col-small-3 col-medium-3 col-large-3' },
+                React.createElement("div", { className: 'box bg-blue' },
+                    React.createElement("p", null, "$u-color-blue (Base)"))),
+            React.createElement("div", { className: 'col-small-3 col-medium-3 col-large-3' },
+                React.createElement("div", { className: 'box bg-green' },
+                    React.createElement("p", null, "$u-color-green (Base)"))),
+            React.createElement("div", { className: 'col-small-3 col-medium-3 col-large-3' },
+                React.createElement("div", { className: 'box bg-yellow' },
+                    React.createElement("p", null, "$u-color-yellow (Base)"))),
+            React.createElement("div", { className: 'col-small-3 col-medium-3 col-large-3' },
+                React.createElement("div", { className: 'box bg-orange' },
+                    React.createElement("p", null, "$u-color-orange (Base)"))),
+            React.createElement("div", { className: 'col-small-3 col-medium-3 col-large-3' },
+                React.createElement("div", { className: 'box bg-salmon' },
+                    React.createElement("p", null, "$u-color-salmon (Base)"))),
+            React.createElement("div", { className: 'col-small-3 col-medium-3 col-large-3' },
+                React.createElement("div", { className: 'box bg-violet' },
+                    React.createElement("p", null, "$u-color-violet (Base)"))),
+            React.createElement("div", { className: 'col-small-3 col-medium-3 col-large-3' },
+                React.createElement("div", { className: 'box bg-yellow' },
+                    React.createElement("p", null, "$u-color-yellow (Base)"))),
+            React.createElement("div", { className: 'col-small-3 col-medium-3 col-large-3' },
+                React.createElement("div", { className: 'box bg-orange' },
+                    React.createElement("p", null, "$u-color-orange (Base)"))),
+            React.createElement("div", { className: 'col-small-3 col-medium-3 col-large-3' },
+                React.createElement("div", { className: 'box bg-salmon' },
+                    React.createElement("p", null, "$u-color-salmon (Base)"))),
+            React.createElement("div", { className: 'col-small-3 col-medium-3 col-large-3' },
+                React.createElement("div", { className: 'box bg-violet' },
+                    React.createElement("p", null, "$u-color-violet (Base)")))));
     };
-    return VehicleComponent;
+    return ColorComponent;
 }(React.Component));
-exports.VehicleComponent = VehicleComponent;
+exports.ColorComponent = ColorComponent;
 
 
 /***/ }),

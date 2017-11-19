@@ -2,9 +2,13 @@
 @import 'mixins';
 
 // Default Colors
-$color-text-default: map-get($u-color-red, 'base');
-$color-title-default: map-get($u-color-red, 'base');
-$color-border-default: map-get($u-color-red, 'base');
+$u-color-text-default: map-get($u-color-red, 'base');
+$u-color-title-default: map-get($u-color-red, 'base');
+$u-color-border-default: map-get($u-color-red, 'base');
+
+$u-font-size: 14px;
+$u-font-weight: 400;
+$u-baseline: 6px;
 
 // Other
 $border-radius-default : 2px;
@@ -15,30 +19,6 @@ $border-radius-buttons : 2px;
 // Typography
 $font-family-base    : 'Raleway', sans-serif;
 $font-family-default : 'Open Sans', sans-serif;
-
-$u-font-size: 16px;
-$u-font-weight: 400;
-
-$grid: 100%;
-$columns: 12;
-$gutter: 15px;
-
-$class-row: 'row';
-$class-cell: 'cell';
-$class-off: 'off';
-
-// Breakpoints
-$min-device : 280px;
-$mobile : 767px;
-$tablet : 992px;
-$desktop : 1200px;
-
-$breakpoints: (
-  (small, $min-device),
-  (medium, $tablet),
-  (large, $desktop)
-);
-
 
 
 $theme-gutter: 20px;
