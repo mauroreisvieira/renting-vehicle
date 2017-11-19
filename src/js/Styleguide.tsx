@@ -3,8 +3,6 @@ import * as ReactDOM from 'react-dom';
 
 import Vehicle from './model/Vehicle';
 
-import { FooterComponent } from './components/layout/FooterComponent';
-import { HeaderComponent } from './components/layout/HeaderComponent';
 import { MenuComponent } from './components/layout/MenuComponent';
 
 import { ButtonComponent } from './components/ButtonComponent';
@@ -21,10 +19,6 @@ export default class Styleguide {
 
     public init(): void {
 
-        ReactDOM.render(
-            <HeaderComponent />,
-            document.getElementById('header')
-        );
         ReactDOM.render(
             <MenuComponent />,
             document.getElementById('sidenav')
@@ -46,11 +40,6 @@ export default class Styleguide {
         ReactDOM.render(
             <ColorComponent />,
             document.getElementById('color')
-        );
-
-        ReactDOM.render(
-            <FooterComponent />,
-            document.getElementById('footer')
         );
     }
 }

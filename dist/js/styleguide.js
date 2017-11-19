@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "/dist";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -77,70 +77,6 @@ module.exports = ReactDOM;
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-Object.defineProperty(exports, "__esModule", { value: true });
-var React = __webpack_require__(0);
-var FooterComponent = /** @class */ (function (_super) {
-    __extends(FooterComponent, _super);
-    function FooterComponent() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
-    FooterComponent.prototype.render = function () {
-        return (React.createElement("div", { className: 'content' },
-            React.createElement("p", null, "Footer")));
-    };
-    return FooterComponent;
-}(React.Component));
-exports.FooterComponent = FooterComponent;
-
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-Object.defineProperty(exports, "__esModule", { value: true });
-var React = __webpack_require__(0);
-var HeaderComponent = /** @class */ (function (_super) {
-    __extends(HeaderComponent, _super);
-    function HeaderComponent() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
-    HeaderComponent.prototype.render = function () {
-        return (React.createElement("div", { className: 'content' },
-            React.createElement("p", null, "Header")));
-    };
-    return HeaderComponent;
-}(React.Component));
-exports.HeaderComponent = HeaderComponent;
-
-
-/***/ }),
-/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -175,7 +111,7 @@ exports.MenuComponent = MenuComponent;
 
 
 /***/ }),
-/* 5 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -183,19 +119,16 @@ exports.MenuComponent = MenuComponent;
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
 var ReactDOM = __webpack_require__(1);
-var FooterComponent_1 = __webpack_require__(2);
-var HeaderComponent_1 = __webpack_require__(3);
-var MenuComponent_1 = __webpack_require__(4);
-var ButtonComponent_1 = __webpack_require__(6);
-var ColorComponent_1 = __webpack_require__(7);
-var TypographyComponent_1 = __webpack_require__(8);
-__webpack_require__(9);
+var MenuComponent_1 = __webpack_require__(2);
+var ButtonComponent_1 = __webpack_require__(4);
+var ColorComponent_1 = __webpack_require__(5);
+var TypographyComponent_1 = __webpack_require__(6);
+__webpack_require__(7);
 var Styleguide = /** @class */ (function () {
     function Styleguide() {
         this.init();
     }
     Styleguide.prototype.init = function () {
-        ReactDOM.render(React.createElement(HeaderComponent_1.HeaderComponent, null), document.getElementById('header'));
         ReactDOM.render(React.createElement(MenuComponent_1.MenuComponent, null), document.getElementById('sidenav'));
         // Typography
         ReactDOM.render(React.createElement(TypographyComponent_1.TypographyComponent, null), document.getElementById('typography'));
@@ -203,7 +136,6 @@ var Styleguide = /** @class */ (function () {
         ReactDOM.render(React.createElement(ButtonComponent_1.ButtonComponent, null), document.getElementById('button'));
         // Color
         ReactDOM.render(React.createElement(ColorComponent_1.ColorComponent, null), document.getElementById('color'));
-        ReactDOM.render(React.createElement(FooterComponent_1.FooterComponent, null), document.getElementById('footer'));
     };
     return Styleguide;
 }());
@@ -212,7 +144,7 @@ new Styleguide();
 
 
 /***/ }),
-/* 6 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -251,7 +183,7 @@ exports.ButtonComponent = ButtonComponent;
 
 
 /***/ }),
-/* 7 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -279,7 +211,7 @@ var ColorComponent = /** @class */ (function (_super) {
                 lighten: '#ff4d63',
                 darken: '#ff4d63',
                 accent: '#ff4d63',
-            },
+            }
         ];
         console.log(_this.colors);
         return _this;
@@ -289,12 +221,13 @@ var ColorComponent = /** @class */ (function (_super) {
             React.createElement("div", { className: 'col-small-12 col-medium-12 col-large-12' },
                 React.createElement("h1", { className: 'text-red' }, "Color")),
             React.createElement("div", { className: 'col-small-3 col-medium-3 col-large-3' },
-                React.createElement("div", { className: 'box bg-pink' },
-                    React.createElement("p", null, "$u-color-pink (Base)")),
-                React.createElement("div", { className: 'box bg-pink' },
-                    React.createElement("p", null, "$u-color-pink (Base)")),
-                React.createElement("div", { className: 'box bg-pink' },
-                    React.createElement("p", null, "$u-color-pink (Base)"))),
+                React.createElement("div", { className: 'box' },
+                    React.createElement("div", { className: 'box__item bg-pink' },
+                        React.createElement("p", null, "$u-color-pink (Base)")),
+                    React.createElement("div", { className: 'box__item bg-pink' },
+                        React.createElement("p", null, "$u-color-pink (Base)")),
+                    React.createElement("div", { className: 'box__item bg-pink' },
+                        React.createElement("p", null, "$u-color-pink (Base)")))),
             React.createElement("div", { className: 'col-small-3 col-medium-3 col-large-3' },
                 React.createElement("div", { className: 'box bg-red' },
                     React.createElement("p", null, "$u-color-red (Base)"))),
@@ -335,7 +268,7 @@ exports.ColorComponent = ColorComponent;
 
 
 /***/ }),
-/* 8 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -375,7 +308,7 @@ exports.TypographyComponent = TypographyComponent;
 
 
 /***/ }),
-/* 9 */
+/* 7 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

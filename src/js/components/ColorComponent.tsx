@@ -24,9 +24,11 @@ export class ColorComponent extends React.Component {
                     <h1 className='text-red'>Color</h1>
                 </div>
                 <div className='col-small-3 col-medium-3 col-large-3'>
-                    <div className='box bg-pink'><p>$u-color-pink (Base)</p></div>
-                    <div className='box bg-pink'><p>$u-color-pink (Base)</p></div>
-                    <div className='box bg-pink'><p>$u-color-pink (Base)</p></div>
+                    <div className='box'>
+                        <div className='box__item bg-pink'><p>$u-color-pink (Base)</p></div>
+                        <div className='box__item bg-pink'><p>$u-color-pink (Base)</p></div>
+                        <div className='box__item bg-pink'><p>$u-color-pink (Base)</p></div>
+                    </div>
                 </div>
                 <div className='col-small-3 col-medium-3 col-large-3'>
                     <div className='box bg-red'><p>$u-color-red (Base)</p></div>

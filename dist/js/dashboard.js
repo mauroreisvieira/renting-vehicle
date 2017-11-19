@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "/dist";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 10);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -77,70 +77,6 @@ module.exports = ReactDOM;
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-Object.defineProperty(exports, "__esModule", { value: true });
-var React = __webpack_require__(0);
-var FooterComponent = /** @class */ (function (_super) {
-    __extends(FooterComponent, _super);
-    function FooterComponent() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
-    FooterComponent.prototype.render = function () {
-        return (React.createElement("div", { className: 'content' },
-            React.createElement("p", null, "Footer")));
-    };
-    return FooterComponent;
-}(React.Component));
-exports.FooterComponent = FooterComponent;
-
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var __extends = (this && this.__extends) || (function () {
-    var extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return function (d, b) {
-        extendStatics(d, b);
-        function __() { this.constructor = d; }
-        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-    };
-})();
-Object.defineProperty(exports, "__esModule", { value: true });
-var React = __webpack_require__(0);
-var HeaderComponent = /** @class */ (function (_super) {
-    __extends(HeaderComponent, _super);
-    function HeaderComponent() {
-        return _super !== null && _super.apply(this, arguments) || this;
-    }
-    HeaderComponent.prototype.render = function () {
-        return (React.createElement("div", { className: 'content' },
-            React.createElement("p", null, "Header")));
-    };
-    return HeaderComponent;
-}(React.Component));
-exports.HeaderComponent = HeaderComponent;
-
-
-/***/ }),
-/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -175,12 +111,12 @@ exports.MenuComponent = MenuComponent;
 
 
 /***/ }),
+/* 3 */,
+/* 4 */,
 /* 5 */,
 /* 6 */,
 /* 7 */,
-/* 8 */,
-/* 9 */,
-/* 10 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -188,10 +124,10 @@ exports.MenuComponent = MenuComponent;
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
 var ReactDOM = __webpack_require__(1);
-var Vehicle_1 = __webpack_require__(11);
-var FooterComponent_1 = __webpack_require__(2);
-var HeaderComponent_1 = __webpack_require__(3);
-var MenuComponent_1 = __webpack_require__(4);
+var Vehicle_1 = __webpack_require__(9);
+var FooterComponent_1 = __webpack_require__(10);
+var HeaderComponent_1 = __webpack_require__(11);
+var MenuComponent_1 = __webpack_require__(2);
 var VehicleComponent_1 = __webpack_require__(12);
 __webpack_require__(13);
 var Dashboard = /** @class */ (function () {
@@ -214,7 +150,7 @@ new Dashboard();
 
 
 /***/ }),
-/* 11 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -230,6 +166,70 @@ var Vehicle = /** @class */ (function () {
     return Vehicle;
 }());
 exports.default = Vehicle;
+
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = __webpack_require__(0);
+var FooterComponent = /** @class */ (function (_super) {
+    __extends(FooterComponent, _super);
+    function FooterComponent() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    FooterComponent.prototype.render = function () {
+        return (React.createElement("div", { className: 'content' },
+            React.createElement("p", null, "Footer")));
+    };
+    return FooterComponent;
+}(React.Component));
+exports.FooterComponent = FooterComponent;
+
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+Object.defineProperty(exports, "__esModule", { value: true });
+var React = __webpack_require__(0);
+var HeaderComponent = /** @class */ (function (_super) {
+    __extends(HeaderComponent, _super);
+    function HeaderComponent() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    HeaderComponent.prototype.render = function () {
+        return (React.createElement("div", { className: 'content' },
+            React.createElement("p", null, "Header")));
+    };
+    return HeaderComponent;
+}(React.Component));
+exports.HeaderComponent = HeaderComponent;
 
 
 /***/ }),
