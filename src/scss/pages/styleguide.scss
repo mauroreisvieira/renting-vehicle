@@ -48,13 +48,28 @@ body {
   margin: 20px 0;
 
   .box {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 
     &__item {
-      text-align: center;
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 2px 14px;
+
+      .t-upper {
+        font-weight: bold;
+        text-transform: uppercase;
+      }
 
       p {
         color: $u-color-white;
+        text-transform: capitalize;
+      }
+
+      span {
+        color: $u-color-white;
+        text-transform: uppercase;
       }
     }
   }

@@ -5,15 +5,6 @@ export class ColorComponent extends React.Component {
 
     constructor(props: any){
         super(props);
-
-        this.colors = [
-            'red': {
-                base: '#f44336',
-                lighten: '#ff4d63',
-                darken: '#ff4d63',
-                accent: '#ff4d63',
-            }
-        ];
         console.log(this.colors);
     }
 
@@ -25,43 +16,155 @@ export class ColorComponent extends React.Component {
                 </div>
                 <div className='col-small-3 col-medium-3 col-large-3'>
                     <div className='box'>
-                        <div className='box__item bg-pink'><p>$u-color-pink (Base)</p></div>
-                        <div className='box__item bg-pink'><p>$u-color-pink (Base)</p></div>
-                        <div className='box__item bg-pink'><p>$u-color-pink (Base)</p></div>
+                        <div className='box__item bg-red'>
+                            <p className='t-upper'>Red</p>
+                        </div>
+                        <div className='box__item bg-red'>
+                            <p>base</p>
+                            <span>#f44336</span>
+                        </div>
+                        <div className='box__item bg-red--lighten'>
+                            <p>lighten</p>
+                            <span>#f44336</span>
+                        </div>
+                        <div className='box__item bg-red--darken'>
+                            <p>darken</p>
+                            <span>#f44336</span>
+                        </div>
                     </div>
                 </div>
                 <div className='col-small-3 col-medium-3 col-large-3'>
-                    <div className='box bg-red'><p>$u-color-red (Base)</p></div>
+                    <div className='box'>
+                        <div className='box__item bg-orange'>
+                            <p className='t-upper'>Orange</p>
+                        </div>
+                        <div className='box__item bg-orange'>
+                            <p>base</p>
+                            <span>#f44336</span>
+                        </div>
+                        <div className='box__item bg-orange--lighten'>
+                            <p>lighten</p>
+                            <span>#f44336</span>
+                        </div>
+                        <div className='box__item bg-orange--darken'>
+                            <p>darken</p>
+                            <span>#f44336</span>
+                        </div>
+                    </div>
                 </div>
                 <div className='col-small-3 col-medium-3 col-large-3'>
-                    <div className='box bg-blue'><p>$u-color-blue (Base)</p></div>
+                    <div className='box'>
+                        <div className='box__item bg-blue'>
+                            <p className='t-upper'>Blue</p>
+                        </div>
+                        <div className='box__item bg-blue'>
+                            <p>base</p>
+                            <span>#f44336</span>
+                        </div>
+                        <div className='box__item bg-blue--lighten'>
+                            <p>lighten</p>
+                            <span>#f44336</span>
+                        </div>
+                        <div className='box__item bg-blue--darken'>
+                            <p>darken</p>
+                            <span>#f44336</span>
+                        </div>
+                    </div>
                 </div>
                 <div className='col-small-3 col-medium-3 col-large-3'>
-                    <div className='box bg-green'><p>$u-color-green (Base)</p></div>
+                    <div className='box'>
+                        <div className='box__item bg-green'>
+                            <p className='t-upper'>Green</p>
+                        </div>
+                        <div className='box__item bg-green'>
+                            <p>base</p>
+                            <span>#f44336</span>
+                        </div>
+                        <div className='box__item bg-green--lighten'>
+                            <p>lighten</p>
+                            <span>#f44336</span>
+                        </div>
+                        <div className='box__item bg-green--darken'>
+                            <p>darken</p>
+                            <span>#f44336</span>
+                        </div>
+                    </div>
                 </div>
                 <div className='col-small-3 col-medium-3 col-large-3'>
-                    <div className='box bg-yellow'><p>$u-color-yellow (Base)</p></div>
+                    <div className='box'>
+                        <div className='box__item bg-red'>
+                            <p className='t-upper'>Red</p>
+                        </div>
+                        <div className='box__item bg-red'>
+                            <p>base</p>
+                            <span>#f44336</span>
+                        </div>
+                        <div className='box__item bg-red--lighten'>
+                            <p>lighten</p>
+                            <span>#f44336</span>
+                        </div>
+                        <div className='box__item bg-red--darken'>
+                            <p>darken</p>
+                            <span>#f44336</span>
+                        </div>
+                    </div>
                 </div>
                 <div className='col-small-3 col-medium-3 col-large-3'>
-                    <div className='box bg-orange'><p>$u-color-orange (Base)</p></div>
+                    <div className='box'>
+                        <div className='box__item bg-orange'>
+                            <p className='t-upper'>Orange</p>
+                        </div>
+                        <div className='box__item bg-orange'>
+                            <p>base</p>
+                            <span>#f44336</span>
+                        </div>
+                        <div className='box__item bg-orange--lighten'>
+                            <p>lighten</p>
+                            <span>#f44336</span>
+                        </div>
+                        <div className='box__item bg-orange--darken'>
+                            <p>darken</p>
+                            <span>#f44336</span>
+                        </div>
+                    </div>
                 </div>
                 <div className='col-small-3 col-medium-3 col-large-3'>
-                    <div className='box bg-salmon'><p>$u-color-salmon (Base)</p></div>
+                    <div className='box'>
+                        <div className='box__item bg-blue'>
+                            <p className='t-upper'>Blue</p>
+                        </div>
+                        <div className='box__item bg-blue'>
+                            <p>base</p>
+                            <span>#f44336</span>
+                        </div>
+                        <div className='box__item bg-blue--lighten'>
+                            <p>lighten</p>
+                            <span>#f44336</span>
+                        </div>
+                        <div className='box__item bg-blue--darken'>
+                            <p>darken</p>
+                            <span>#f44336</span>
+                        </div>
+                    </div>
                 </div>
                 <div className='col-small-3 col-medium-3 col-large-3'>
-                    <div className='box bg-violet'><p>$u-color-violet (Base)</p></div>
-                </div>
-                <div className='col-small-3 col-medium-3 col-large-3'>
-                    <div className='box bg-yellow'><p>$u-color-yellow (Base)</p></div>
-                </div>
-                <div className='col-small-3 col-medium-3 col-large-3'>
-                    <div className='box bg-orange'><p>$u-color-orange (Base)</p></div>
-                </div>
-                <div className='col-small-3 col-medium-3 col-large-3'>
-                    <div className='box bg-salmon'><p>$u-color-salmon (Base)</p></div>
-                </div>
-                <div className='col-small-3 col-medium-3 col-large-3'>
-                    <div className='box bg-violet'><p>$u-color-violet (Base)</p></div>
+                    <div className='box'>
+                        <div className='box__item bg-green'>
+                            <p className='t-upper'>Green</p>
+                        </div>
+                        <div className='box__item bg-green'>
+                            <p>base</p>
+                            <span>#f44336</span>
+                        </div>
+                        <div className='box__item bg-green--lighten'>
+                            <p>lighten</p>
+                            <span>#f44336</span>
+                        </div>
+                        <div className='box__item bg-green--darken'>
+                            <p>darken</p>
+                            <span>#f44336</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         );
